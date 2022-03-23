@@ -31,6 +31,11 @@ namespace DatabaseBackupManager
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelAuthenticationMode = new System.Windows.Forms.Panel();
+            this.textBoxLogin = new System.Windows.Forms.TextBox();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.labelLogin = new System.Windows.Forms.Label();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonConnect = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -40,11 +45,6 @@ namespace DatabaseBackupManager
             this.comboBoxServerName = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.panelAuthenticationMode = new System.Windows.Forms.Panel();
-            this.textBoxLogin = new System.Windows.Forms.TextBox();
-            this.textBoxPassword = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.labelLogin = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panelAuthenticationMode.SuspendLayout();
             this.SuspendLayout();
@@ -78,6 +78,50 @@ namespace DatabaseBackupManager
             this.panel1.Size = new System.Drawing.Size(576, 250);
             this.panel1.TabIndex = 1;
             // 
+            // panelAuthenticationMode
+            // 
+            this.panelAuthenticationMode.Controls.Add(this.textBoxLogin);
+            this.panelAuthenticationMode.Controls.Add(this.textBoxPassword);
+            this.panelAuthenticationMode.Controls.Add(this.label6);
+            this.panelAuthenticationMode.Controls.Add(this.labelLogin);
+            this.panelAuthenticationMode.Location = new System.Drawing.Point(0, 103);
+            this.panelAuthenticationMode.Name = "panelAuthenticationMode";
+            this.panelAuthenticationMode.Size = new System.Drawing.Size(576, 71);
+            this.panelAuthenticationMode.TabIndex = 13;
+            // 
+            // textBoxLogin
+            // 
+            this.textBoxLogin.Location = new System.Drawing.Point(209, 0);
+            this.textBoxLogin.Name = "textBoxLogin";
+            this.textBoxLogin.Size = new System.Drawing.Size(349, 22);
+            this.textBoxLogin.TabIndex = 18;
+            // 
+            // textBoxPassword
+            // 
+            this.textBoxPassword.Location = new System.Drawing.Point(209, 30);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
+            this.textBoxPassword.Size = new System.Drawing.Size(349, 22);
+            this.textBoxPassword.TabIndex = 17;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(39, 33);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(73, 17);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Password:";
+            // 
+            // labelLogin
+            // 
+            this.labelLogin.AutoSize = true;
+            this.labelLogin.Location = new System.Drawing.Point(39, 3);
+            this.labelLogin.Name = "labelLogin";
+            this.labelLogin.Size = new System.Drawing.Size(47, 17);
+            this.labelLogin.TabIndex = 15;
+            this.labelLogin.Text = "Login:";
+            // 
             // buttonCancel
             // 
             this.buttonCancel.Location = new System.Drawing.Point(447, 203);
@@ -86,6 +130,7 @@ namespace DatabaseBackupManager
             this.buttonCancel.TabIndex = 12;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonConnect
             // 
@@ -95,6 +140,7 @@ namespace DatabaseBackupManager
             this.buttonConnect.TabIndex = 2;
             this.buttonConnect.Text = "Connect";
             this.buttonConnect.UseVisualStyleBackColor = true;
+            this.buttonConnect.Click += new System.EventHandler(this.buttonConnect_Click);
             // 
             // label7
             // 
@@ -163,49 +209,6 @@ namespace DatabaseBackupManager
             this.label2.TabIndex = 0;
             this.label2.Text = "Server type:";
             // 
-            // panelAuthenticationMode
-            // 
-            this.panelAuthenticationMode.Controls.Add(this.textBoxLogin);
-            this.panelAuthenticationMode.Controls.Add(this.textBoxPassword);
-            this.panelAuthenticationMode.Controls.Add(this.label6);
-            this.panelAuthenticationMode.Controls.Add(this.labelLogin);
-            this.panelAuthenticationMode.Location = new System.Drawing.Point(0, 103);
-            this.panelAuthenticationMode.Name = "panelAuthenticationMode";
-            this.panelAuthenticationMode.Size = new System.Drawing.Size(576, 71);
-            this.panelAuthenticationMode.TabIndex = 13;
-            // 
-            // textBoxLogin
-            // 
-            this.textBoxLogin.Location = new System.Drawing.Point(209, 0);
-            this.textBoxLogin.Name = "textBoxLogin";
-            this.textBoxLogin.Size = new System.Drawing.Size(349, 22);
-            this.textBoxLogin.TabIndex = 18;
-            // 
-            // textBoxPassword
-            // 
-            this.textBoxPassword.Location = new System.Drawing.Point(209, 30);
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(349, 22);
-            this.textBoxPassword.TabIndex = 17;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(39, 33);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 17);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Password:";
-            // 
-            // labelLogin
-            // 
-            this.labelLogin.AutoSize = true;
-            this.labelLogin.Location = new System.Drawing.Point(39, 3);
-            this.labelLogin.Name = "labelLogin";
-            this.labelLogin.Size = new System.Drawing.Size(47, 17);
-            this.labelLogin.TabIndex = 15;
-            this.labelLogin.Text = "Login:";
-            // 
             // ConnectToServerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -216,7 +219,7 @@ namespace DatabaseBackupManager
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ConnectToServerForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Connect to Server";
             this.Load += new System.EventHandler(this.ConnectToServerForm_Load);
             this.panel1.ResumeLayout(false);

@@ -17,11 +17,6 @@ namespace DatabaseBackupManager
             InitializeComponent();
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void changeLanguage(object selectedMenuItem)
         {
             ToolStripMenuItem currentItem = selectedMenuItem as ToolStripMenuItem;
@@ -42,6 +37,22 @@ namespace DatabaseBackupManager
         private void tiengVietToolStripMenuItem_Click(object sender, EventArgs e)
         {
             changeLanguage(sender);
+        }
+
+        private void connectToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ConnectToServerForm(this).ShowDialog();
+        }
+
+        private void disconnectToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Controls.Clear();
+            InitializeComponent();
+        }
+
+        private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            userDatabasesTableAdapter.Fill(appData.UserDatabases);
         }
     }
 }
