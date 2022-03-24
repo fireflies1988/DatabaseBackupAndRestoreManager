@@ -65,16 +65,8 @@ namespace DatabaseBackupManager
         //                }
         //            }
         //        }
-        //        mainForm.toolStripStatusLabelServerNameAndLogin.Text = comboBoxServerName.Text + " - " + textBoxLogin.Text;
         //    }
         //}
-
-        private void FillListBoxDatabases(string connectionString)
-        {
-            mainForm.userDatabasesTableAdapter.Connection.ConnectionString = connectionString;
-            mainForm.userDatabasesTableAdapter.Fill(mainForm.appData.UserDatabases);
-            mainForm.toolStripStatusLabelServerNameAndLogin.Text = comboBoxServerName.Text + " - " + textBoxLogin.Text;
-        }
 
         private void comboBoxAuthentication_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -112,7 +104,8 @@ namespace DatabaseBackupManager
 
             try
             {
-                FillListBoxDatabases(connectionString);
+                mainForm.PopulateTreeViewExplorer(connectionString);
+                mainForm.treeViewExplorer.Nodes[0].Text = comboBoxServerName.Text + " - " + textBoxLogin.Text;
             }
             catch (Exception ex)
             {
@@ -121,7 +114,8 @@ namespace DatabaseBackupManager
             }
 
             Close();
-            mainForm.groupBoxDatabases.Enabled = true;
+            mainForm.groupBoxExplorer.Enabled = true;
+            mainForm.treeViewExplorer.Visible = true;
             mainForm.groupBoxBackupHistory.Enabled = true;
             mainForm.connectToolStripMenuItem.Enabled = false;
             mainForm.disconnectToolStripMenuItem.Enabled = true;

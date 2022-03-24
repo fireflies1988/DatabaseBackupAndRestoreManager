@@ -41,26 +41,20 @@ namespace DatabaseBackupManager
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tiengVietToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.groupBoxDatabases = new System.Windows.Forms.GroupBox();
-            this.listBoxDatabases = new System.Windows.Forms.ListBox();
-            this.userDatabasesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.appData = new DatabaseBackupManager.AppData();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabelServerNameAndLogin = new System.Windows.Forms.ToolStripStatusLabel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.imageListExplorer = new System.Windows.Forms.ImageList(this.components);
+            this.groupBoxExplorer = new System.Windows.Forms.GroupBox();
+            this.treeViewExplorer = new System.Windows.Forms.TreeView();
             this.groupBoxBackupHistory = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.userDatabasesTableAdapter = new DatabaseBackupManager.AppDataTableAdapters.userDatabasesTableAdapter();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userDatabasesTableAdapter = new DatabaseBackupManager.AppDataTableAdapters.userDatabasesTableAdapter();
+            this.backup_devicesTableAdapter = new DatabaseBackupManager.AppDataTableAdapters.backup_devicesTableAdapter();
             this.menuStrip1.SuspendLayout();
-            this.groupBoxDatabases.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.userDatabasesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.appData)).BeginInit();
-            this.statusStrip1.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.groupBoxExplorer.SuspendLayout();
             this.groupBoxBackupHistory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -139,56 +133,42 @@ namespace DatabaseBackupManager
             resources.ApplyResources(this.tiengVietToolStripMenuItem, "tiengVietToolStripMenuItem");
             this.tiengVietToolStripMenuItem.Click += new System.EventHandler(this.tiengVietToolStripMenuItem_Click);
             // 
-            // groupBoxDatabases
-            // 
-            this.groupBoxDatabases.Controls.Add(this.listBoxDatabases);
-            resources.ApplyResources(this.groupBoxDatabases, "groupBoxDatabases");
-            this.groupBoxDatabases.Name = "groupBoxDatabases";
-            this.groupBoxDatabases.TabStop = false;
-            // 
-            // listBoxDatabases
-            // 
-            this.listBoxDatabases.BackColor = System.Drawing.SystemColors.Control;
-            this.listBoxDatabases.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBoxDatabases.DataSource = this.userDatabasesBindingSource;
-            this.listBoxDatabases.DisplayMember = "name";
-            resources.ApplyResources(this.listBoxDatabases, "listBoxDatabases");
-            this.listBoxDatabases.FormattingEnabled = true;
-            this.listBoxDatabases.Name = "listBoxDatabases";
-            // 
-            // userDatabasesBindingSource
-            // 
-            this.userDatabasesBindingSource.DataMember = "UserDatabases";
-            this.userDatabasesBindingSource.DataSource = this.appData;
-            // 
-            // appData
-            // 
-            this.appData.DataSetName = "AppData";
-            this.appData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabelServerNameAndLogin});
             resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.Name = "statusStrip1";
             // 
-            // toolStripStatusLabelServerNameAndLogin
+            // imageListExplorer
             // 
-            this.toolStripStatusLabelServerNameAndLogin.Name = "toolStripStatusLabelServerNameAndLogin";
-            resources.ApplyResources(this.toolStripStatusLabelServerNameAndLogin, "toolStripStatusLabelServerNameAndLogin");
+            this.imageListExplorer.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListExplorer.ImageStream")));
+            this.imageListExplorer.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageListExplorer.Images.SetKeyName(0, "icons8-database-view-16.png");
+            this.imageListExplorer.Images.SetKeyName(1, "icons8-folder-16.png");
+            this.imageListExplorer.Images.SetKeyName(2, "icons8-database-16.png");
+            this.imageListExplorer.Images.SetKeyName(3, "icons8-hdmi-cable-16.png");
             // 
-            // panel1
+            // groupBoxExplorer
             // 
-            this.panel1.Controls.Add(this.groupBoxDatabases);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
+            this.groupBoxExplorer.Controls.Add(this.treeViewExplorer);
+            resources.ApplyResources(this.groupBoxExplorer, "groupBoxExplorer");
+            this.groupBoxExplorer.Name = "groupBoxExplorer";
+            this.groupBoxExplorer.TabStop = false;
+            // 
+            // treeViewExplorer
+            // 
+            this.treeViewExplorer.BackColor = System.Drawing.SystemColors.Control;
+            this.treeViewExplorer.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.treeViewExplorer, "treeViewExplorer");
+            this.treeViewExplorer.ImageList = this.imageListExplorer;
+            this.treeViewExplorer.Name = "treeViewExplorer";
+            this.treeViewExplorer.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            ((System.Windows.Forms.TreeNode)(resources.GetObject("treeViewExplorer.Nodes")))});
             // 
             // groupBoxBackupHistory
             // 
-            this.groupBoxBackupHistory.Controls.Add(this.dataGridView1);
             resources.ApplyResources(this.groupBoxBackupHistory, "groupBoxBackupHistory");
+            this.groupBoxBackupHistory.Controls.Add(this.dataGridView1);
             this.groupBoxBackupHistory.Name = "groupBoxBackupHistory";
             this.groupBoxBackupHistory.TabStop = false;
             // 
@@ -210,10 +190,6 @@ namespace DatabaseBackupManager
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
-            // 
-            // userDatabasesTableAdapter
-            // 
-            this.userDatabasesTableAdapter.ClearBeforeFill = true;
             // 
             // Column1
             // 
@@ -239,24 +215,27 @@ namespace DatabaseBackupManager
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
             // 
+            // userDatabasesTableAdapter
+            // 
+            this.userDatabasesTableAdapter.ClearBeforeFill = true;
+            // 
+            // backup_devicesTableAdapter
+            // 
+            this.backup_devicesTableAdapter.ClearBeforeFill = true;
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.groupBoxBackupHistory);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.groupBoxExplorer);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.groupBoxDatabases.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.userDatabasesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.appData)).EndInit();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
-            this.panel1.ResumeLayout(false);
+            this.groupBoxExplorer.ResumeLayout(false);
             this.groupBoxBackupHistory.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -274,21 +253,19 @@ namespace DatabaseBackupManager
         private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tiengVietToolStripMenuItem;
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.Panel panel1;
-        public System.Windows.Forms.GroupBox groupBoxDatabases;
-        public System.Windows.Forms.GroupBox groupBoxBackupHistory;
-        public System.Windows.Forms.ListBox listBoxDatabases;
-        public System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelServerNameAndLogin;
         public System.Windows.Forms.ToolStripMenuItem connectToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem disconnectToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem;
-        private System.Windows.Forms.BindingSource userDatabasesBindingSource;
-        public AppDataTableAdapters.userDatabasesTableAdapter userDatabasesTableAdapter;
-        public AppData appData;
+        private System.Windows.Forms.ImageList imageListExplorer;
+        public System.Windows.Forms.GroupBox groupBoxBackupHistory;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        public System.Windows.Forms.TreeView treeViewExplorer;
+        public System.Windows.Forms.GroupBox groupBoxExplorer;
+        public AppDataTableAdapters.userDatabasesTableAdapter userDatabasesTableAdapter;
+        public AppDataTableAdapters.backup_devicesTableAdapter backup_devicesTableAdapter;
     }
 }

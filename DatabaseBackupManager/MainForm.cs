@@ -1,5 +1,6 @@
 ﻿using DatabaseBackupManager.Properties;
 using System;
+using System.Data;
 using System.Globalization;
 using System.Linq;
 using System.Threading;
@@ -10,6 +11,11 @@ namespace DatabaseBackupManager
     public partial class MainForm : Form
     {
         public MainForm()
+        {
+            Init();
+        }
+
+        private void Init()
         {
             //ResourceManager rm = new ResourceManager("DatabaseBackupManager.Properties.Resources", Assembly.GetExecutingAssembly());
             string lang = Utils.ReadResource("lang");
@@ -73,12 +79,48 @@ namespace DatabaseBackupManager
         private void disconnectToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Controls.Clear();
-            InitializeComponent();
+            Init();
         }
 
         private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            userDatabasesTableAdapter.Fill(appData.UserDatabases);
+            treeViewExplorer.Nodes[0].Nodes[0].Nodes.Clear();
+            treeViewExplorer.Nodes[0].Nodes[1].Nodes.Clear();
+            PopulateTreeViewExplorer();
+        }
+
+        public void PopulateTreeViewExplorer()
+        {
+            foreach (DataRow row in userDatabasesTableAdapter.GetData().Rows)
+            {
+                TreeNode node = new TreeNode(row["name"].ToString(), 2, 2);
+                treeViewExplorer.Nodes[0].Nodes[0].Nodes.Add(node);
+            }
+
+            foreach (DataRow row in backup_devicesTableAdapter.GetData().Rows)
+            {
+                TreeNode node = new TreeNode(row["name"].ToString(), 3, 3);
+                treeViewExplorer.Nodes[0].Nodes[1].Nodes.Add(node);
+            }
+        }
+
+        public void PopulateTreeViewExplorer(string connectionString)
+        {
+            userDatabasesTableAdapter.Connection.ConnectionString = connectionString;
+            backup_devicesTableAdapter.Connection.ConnectionString = connectionString;
+            //userDatabasesTableAdapter.Fill(mainForm.appData.UserDatabases);
+
+            foreach (DataRow row in userDatabasesTableAdapter.GetData().Rows)
+            {
+                TreeNode node = new TreeNode(row["name"].ToString(), 2, 2);
+                treeViewExplorer.Nodes[0].Nodes[0].Nodes.Add(node);
+            }
+
+            foreach (DataRow row in backup_devicesTableAdapter.GetData().Rows)
+            {
+                TreeNode node = new TreeNode(row["name"].ToString(), 3, 3);
+                treeViewExplorer.Nodes[0].Nodes[1].Nodes.Add(node);
+            }
         }
     }
 }
