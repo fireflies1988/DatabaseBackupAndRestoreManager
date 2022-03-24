@@ -59,5 +59,14 @@ namespace DatabaseBackupManager.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to en-US.
+        /// </summary>
+        internal static string lang {
+            get {
+                return ResourceManager.GetString("lang", resourceCulture);
+            }
+        }
     }
 }

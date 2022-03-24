@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+﻿using DatabaseBackupManager.Properties;
+using System;
+using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace DatabaseBackupManager
@@ -14,7 +11,18 @@ namespace DatabaseBackupManager
     {
         public MainForm()
         {
+            //ResourceManager rm = new ResourceManager("DatabaseBackupManager.Properties.Resources", Assembly.GetExecutingAssembly());
+            string lang = Utils.ReadResource("lang");
+            Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo(lang);
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo(lang);
+
             InitializeComponent();
+            if (lang == "vi-VN")
+            {
+                englishToolStripMenuItem.Checked = false;
+                tiengVietToolStripMenuItem.Checked = true;
+                languageToolStripMenuItem.Text = tiengVietToolStripMenuItem.Text;
+            }
         }
 
         private void changeLanguage(object selectedMenuItem)
@@ -31,12 +39,30 @@ namespace DatabaseBackupManager
 
         private void englishToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            changeLanguage(sender);
+            if (!englishToolStripMenuItem.Checked)
+            {
+                changeLanguage(sender);
+                Utils.AddOrUpdateResource("lang", "en-US");
+                if (MessageBox.Show(this, "Ngôn ngữ hiển thị đã được thay đổi. Bạn phải khởi động lại ứng dụng để các thay đổi có hiệu lực." +
+                    "\nBạn có muốn khởi động lại nó bây giờ không?", "Thay đổi ngôn ngữ", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                {
+                    Application.Restart();
+                }
+            }
         }
 
         private void tiengVietToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            changeLanguage(sender);
+            if (!tiengVietToolStripMenuItem.Checked)
+            {
+                changeLanguage(sender);
+                Utils.AddOrUpdateResource("lang", "vi-VN");
+                if (MessageBox.Show(this, "Display language has been changed. You must restart the application for changes to take effect." +
+                    "\nDo you want to restart it now?", "Change language", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                {
+                    Application.Restart();
+                }
+            }
         }
 
         private void connectToolStripMenuItem_Click(object sender, EventArgs e)
