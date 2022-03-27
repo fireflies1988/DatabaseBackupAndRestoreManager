@@ -92,19 +92,18 @@ namespace DatabaseBackupManager
 
         private void buttonConnect_Click(object sender, EventArgs e)
         {
-            string connectionString;
             if (comboBoxAuthentication.SelectedItem.ToString() == "Windows Authentication")
             {
-                connectionString = Database.GetConnectionString(comboBoxServerName.Text);
+                Database.ConnectionString = Database.GetConnectionString(comboBoxServerName.Text);
             }
             else
             {
-                connectionString = Database.GetConnectionString(comboBoxServerName.Text, textBoxLogin.Text, textBoxPassword.Text);
+                Database.ConnectionString = Database.GetConnectionString(comboBoxServerName.Text, textBoxLogin.Text, textBoxPassword.Text);
             }
 
             try
             {
-                mainForm.PopulateTreeViewExplorer(connectionString);
+                mainForm.PopulateTreeViewExplorer(Database.ConnectionString);
                 mainForm.treeViewExplorer.Nodes[0].Text = comboBoxServerName.Text + " - " + textBoxLogin.Text;
             }
             catch (Exception ex)

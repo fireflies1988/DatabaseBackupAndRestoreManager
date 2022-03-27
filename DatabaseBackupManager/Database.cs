@@ -9,6 +9,8 @@ namespace DatabaseBackupManager
 {
     class Database
     {
+        public static string ConnectionString;
+
         public static string GetConnectionString(string dataSource)
         {
             return "Data Source=" + dataSource + ";Integrated Security=true;";

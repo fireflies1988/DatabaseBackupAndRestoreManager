@@ -84,6 +84,7 @@ namespace DatabaseBackupManager
 
         private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            groupBoxBackupHistory.Visible = false;
             treeViewExplorer.Nodes[0].Nodes[0].Nodes.Clear();
             treeViewExplorer.Nodes[0].Nodes[1].Nodes.Clear();
             PopulateTreeViewExplorer();
@@ -120,6 +121,21 @@ namespace DatabaseBackupManager
             {
                 TreeNode node = new TreeNode(row["name"].ToString(), 3, 3);
                 treeViewExplorer.Nodes[0].Nodes[1].Nodes.Add(node);
+            }
+        }
+
+        private void treeViewExplorer_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            if (treeViewExplorer.SelectedNode.Parent != null
+                && treeViewExplorer.SelectedNode.Parent.Name == "NodeDatabases")
+            {
+                groupBoxBackupHistory.Visible = true;
+                backupHistoryTableAdapter.Connection.ConnectionString = Database.ConnectionString;
+                backupHistoryTableAdapter.Fill(appData.BackupHistory, "bd_" + treeViewExplorer.SelectedNode.Text);
+            }
+            else
+            {
+                groupBoxBackupHistory.Visible = false;
             }
         }
     }
