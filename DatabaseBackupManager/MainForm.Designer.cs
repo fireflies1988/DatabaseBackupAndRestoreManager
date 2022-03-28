@@ -57,12 +57,14 @@ namespace DatabaseBackupManager
             this.userDatabasesTableAdapter = new DatabaseBackupManager.AppDataTableAdapters.userDatabasesTableAdapter();
             this.backup_devicesTableAdapter = new DatabaseBackupManager.AppDataTableAdapters.backup_devicesTableAdapter();
             this.backupHistoryTableAdapter = new DatabaseBackupManager.AppDataTableAdapters.BackupHistoryTableAdapter();
+            this.backupDevicesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
             this.groupBoxExplorer.SuspendLayout();
             this.groupBoxBackupHistory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBackupHistory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backupHistoryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backupDevicesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -258,6 +260,11 @@ namespace DatabaseBackupManager
             // 
             this.backupHistoryTableAdapter.ClearBeforeFill = true;
             // 
+            // backupDevicesBindingSource
+            // 
+            this.backupDevicesBindingSource.DataMember = "backup_devices";
+            this.backupDevicesBindingSource.DataSource = this.appData;
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -276,6 +283,7 @@ namespace DatabaseBackupManager
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBackupHistory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.backupHistoryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.appData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backupDevicesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -309,5 +317,6 @@ namespace DatabaseBackupManager
         private System.Windows.Forms.DataGridViewTextBoxColumn backupfinishdateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource backupDevicesBindingSource;
     }
 }

@@ -92,6 +92,7 @@ namespace DatabaseBackupManager
 
         public void PopulateTreeViewExplorer()
         {
+            backup_devicesTableAdapter.Fill(appData.backup_devices);
             foreach (DataRow row in userDatabasesTableAdapter.GetData().Rows)
             {
                 TreeNode node = new TreeNode(row["name"].ToString(), 2, 2);
@@ -109,7 +110,7 @@ namespace DatabaseBackupManager
         {
             userDatabasesTableAdapter.Connection.ConnectionString = connectionString;
             backup_devicesTableAdapter.Connection.ConnectionString = connectionString;
-            //userDatabasesTableAdapter.Fill(mainForm.appData.UserDatabases);
+            backup_devicesTableAdapter.Fill(appData.backup_devices);
 
             foreach (DataRow row in userDatabasesTableAdapter.GetData().Rows)
             {
@@ -129,14 +130,40 @@ namespace DatabaseBackupManager
             if (treeViewExplorer.SelectedNode.Parent != null
                 && treeViewExplorer.SelectedNode.Parent.Name == "NodeDatabases")
             {
+                string backupDeviceName = "bd_" + treeViewExplorer.SelectedNode.Text;
                 groupBoxBackupHistory.Visible = true;
                 backupHistoryTableAdapter.Connection.ConnectionString = Database.ConnectionString;
-                backupHistoryTableAdapter.Fill(appData.BackupHistory, "bd_" + treeViewExplorer.SelectedNode.Text);
+                backupHistoryTableAdapter.Fill(appData.BackupHistory, backupDeviceName);
+
+                if (!BackupDeviceExists(backupDeviceName))
+                {
+                    newBackupDeviceToolStripMenuItem.Enabled = true;
+                    backupToolStripMenuItem.Enabled = false;
+                }
+                else
+                {
+                    newBackupDeviceToolStripMenuItem.Enabled = false;
+                    backupToolStripMenuItem.Enabled = true;
+                    restoreToolStripMenuItem.Enabled = backupHistoryBindingSource.Count > 0;
+                }
             }
             else
             {
                 groupBoxBackupHistory.Visible = false;
             }
+        }
+
+        private bool BackupDeviceExists(string backupDeviceName)
+        {
+            //foreach (DataRow row in backup_devicesTableAdapter.GetData().Rows)
+            //{
+            //    if (backupDeviceName == row["name"].ToString())
+            //    {
+            //        return true;
+            //    }
+            //}
+            //return false;
+            return backupDevicesBindingSource.Find("name", backupDeviceName) > -1;
         }
     }
 }

@@ -354,13 +354,13 @@
     <value>3</value>
   </data>
   <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 28</value>
+    <value>171, 28</value>
   </data>
   <data name="englishToolStripMenuItem.Text" xml:space="preserve">
     <value>English</value>
   </data>
   <data name="tiengVietToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 28</value>
+    <value>171, 28</value>
   </data>
   <data name="tiengVietToolStripMenuItem.Text" xml:space="preserve">
     <value>Tiếng Việt</value>
@@ -393,14 +393,14 @@
     <value>2</value>
   </data>
   <metadata name="imageListExplorer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>904, 17</value>
+    <value>798, 17</value>
   </metadata>
   <data name="imageListExplorer.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADu
-        CQAAAk1TRnQBSQFMAgEBBAEAAUwBAAFMAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        CQAAAk1TRnQBSQFMAgEBBAEAAVQBAAFUAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAASADAAEBAQABCAYAAQgYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -444,6 +444,51 @@
         AgABwAEDAgABwAEDAgABwAEDAgABwAEDAgABwAEDAgABwAEDAv8BwAEDAgABwAEDAv8BwAEDAgABwAED
         Av8BwAIDAf8BwAEDAv8B8AEPAv8B8AEPAv8L
 </value>
+  </data>
+  <data name="&gt;&gt;treeViewExplorer.Name" xml:space="preserve">
+    <value>treeViewExplorer</value>
+  </data>
+  <data name="&gt;&gt;treeViewExplorer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;treeViewExplorer.Parent" xml:space="preserve">
+    <value>groupBoxExplorer</value>
+  </data>
+  <data name="&gt;&gt;treeViewExplorer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBoxExplorer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="groupBoxExplorer.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="groupBoxExplorer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt</value>
+  </data>
+  <data name="groupBoxExplorer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 32</value>
+  </data>
+  <data name="groupBoxExplorer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 506</value>
+  </data>
+  <data name="groupBoxExplorer.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="groupBoxExplorer.Text" xml:space="preserve">
+    <value>Explorer</value>
+  </data>
+  <data name="&gt;&gt;groupBoxExplorer.Name" xml:space="preserve">
+    <value>groupBoxExplorer</value>
+  </data>
+  <data name="&gt;&gt;groupBoxExplorer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxExplorer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxExplorer.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="treeViewExplorer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -497,92 +542,8 @@
   <data name="&gt;&gt;treeViewExplorer.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="groupBoxExplorer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="groupBoxExplorer.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="groupBoxExplorer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.2pt</value>
-  </data>
-  <data name="groupBoxExplorer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 32</value>
-  </data>
-  <data name="groupBoxExplorer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 506</value>
-  </data>
-  <data name="groupBoxExplorer.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="groupBoxExplorer.Text" xml:space="preserve">
-    <value>Explorer</value>
-  </data>
-  <data name="&gt;&gt;groupBoxExplorer.Name" xml:space="preserve">
-    <value>groupBoxExplorer</value>
-  </data>
-  <data name="&gt;&gt;groupBoxExplorer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxExplorer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBoxExplorer.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="groupBoxBackupHistory.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="positionDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Position</value>
-  </data>
-  <data name="positionDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="backupstartdateDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Backup Start Date</value>
-  </data>
-  <data name="backupstartdateDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="backupfinishdateDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Backup Finish Date</value>
-  </data>
-  <data name="backupfinishdateDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="usernameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>User Name</value>
-  </data>
-  <data name="usernameDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="descriptionDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Description</value>
-  </data>
-  <data name="descriptionDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <metadata name="backupHistoryBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>385, 60</value>
-  </metadata>
-  <metadata name="appData.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>271, 60</value>
-  </metadata>
-  <data name="dataGridViewBackupHistory.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="dataGridViewBackupHistory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 23</value>
-  </data>
-  <data name="dataGridViewBackupHistory.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="dataGridViewBackupHistory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>684, 480</value>
-  </data>
-  <data name="dataGridViewBackupHistory.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;dataGridViewBackupHistory.Name" xml:space="preserve">
     <value>dataGridViewBackupHistory</value>
@@ -632,17 +593,86 @@
   <data name="&gt;&gt;groupBoxBackupHistory.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="backupHistoryBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>385, 60</value>
+  </metadata>
+  <data name="dataGridViewBackupHistory.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dataGridViewBackupHistory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 23</value>
+  </data>
+  <data name="dataGridViewBackupHistory.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="dataGridViewBackupHistory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>684, 480</value>
+  </data>
+  <data name="dataGridViewBackupHistory.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewBackupHistory.Name" xml:space="preserve">
+    <value>dataGridViewBackupHistory</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewBackupHistory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewBackupHistory.Parent" xml:space="preserve">
+    <value>groupBoxBackupHistory</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewBackupHistory.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="positionDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="positionDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="backupstartdateDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Backup Start Date</value>
+  </data>
+  <data name="backupstartdateDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="backupfinishdateDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Backup Finish Date</value>
+  </data>
+  <data name="backupfinishdateDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="usernameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="usernameDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="descriptionDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="descriptionDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <metadata name="backupHistoryBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>385, 60</value>
+  </metadata>
+  <metadata name="appData.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>271, 60</value>
+  </metadata>
   <metadata name="appData.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>271, 60</value>
   </metadata>
   <metadata name="userDatabasesTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>657, 17</value>
+    <value>551, 17</value>
   </metadata>
   <metadata name="backup_devicesTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 60</value>
   </metadata>
   <metadata name="backupHistoryTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>638, 60</value>
+  </metadata>
+  <metadata name="backupDevicesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>289, 17</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -652,6 +682,9 @@
   </metadata>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>945, 560</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -778,6 +811,12 @@
   </data>
   <data name="&gt;&gt;backupHistoryTableAdapter.Type" xml:space="preserve">
     <value>DatabaseBackupManager.AppDataTableAdapters.BackupHistoryTableAdapter, AppData.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;backupDevicesBindingSource.Name" xml:space="preserve">
+    <value>backupDevicesBindingSource</value>
+  </data>
+  <data name="&gt;&gt;backupDevicesBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainForm</value>
