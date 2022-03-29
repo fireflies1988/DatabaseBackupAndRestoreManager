@@ -1,8 +1,5 @@
 ﻿using Microsoft.Win32;
 using System;
-using System.Data;
-using System.Data.Sql;
-using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace DatabaseBackupManager
@@ -49,25 +46,6 @@ namespace DatabaseBackupManager
             }
         }
 
-        //private void FillListBoxDatabases(SqlConnection connection)
-        //{
-        //    using (SqlConnection con = connection)
-        //    {
-        //        string cmdText = "SELECT name FROM sys.databases" +
-        //                             " WHERE database_id > 4 AND name != 'distribution' ORDER BY name";
-        //        using (SqlCommand cmd = new SqlCommand(cmdText, con))
-        //        {
-        //            using (SqlDataReader dr = cmd.ExecuteReader())
-        //            {
-        //                while (dr.Read())
-        //                {
-        //                    mainForm.listBoxDatabases.Items.Add(dr.GetString(0));
-        //                }
-        //            }
-        //        }
-        //    }
-        //}
-
         private void comboBoxAuthentication_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBoxAuthentication.SelectedItem.ToString() == "Windows Authentication")
@@ -94,16 +72,16 @@ namespace DatabaseBackupManager
         {
             if (comboBoxAuthentication.SelectedItem.ToString() == "Windows Authentication")
             {
-                Database.ConnectionString = Database.GetConnectionString(comboBoxServerName.Text);
+                SqlServer.ConnectionString = SqlServer.GetConnectionString(comboBoxServerName.Text);
             }
             else
             {
-                Database.ConnectionString = Database.GetConnectionString(comboBoxServerName.Text, textBoxLogin.Text, textBoxPassword.Text);
+                SqlServer.ConnectionString = SqlServer.GetConnectionString(comboBoxServerName.Text, textBoxLogin.Text, textBoxPassword.Text);
             }
 
             try
             {
-                mainForm.PopulateTreeViewExplorer(Database.ConnectionString);
+                mainForm.PopulateTreeViewExplorer(SqlServer.ConnectionString);
                 mainForm.treeViewExplorer.Nodes[0].Text = comboBoxServerName.Text + " - " + textBoxLogin.Text;
             }
             catch (Exception ex)
@@ -120,5 +98,24 @@ namespace DatabaseBackupManager
             mainForm.disconnectToolStripMenuItem.Enabled = true;
             mainForm.refreshToolStripMenuItem.Enabled = true;
         }
+
+        //private void FillListBoxDatabases(SqlConnection connection)
+        //{
+        //    using (SqlConnection con = connection)
+        //    {
+        //        string cmdText = "SELECT name FROM sys.databases" +
+        //                             " WHERE database_id > 4 AND name != 'distribution' ORDER BY name";
+        //        using (SqlCommand cmd = new SqlCommand(cmdText, con))
+        //        {
+        //            using (SqlDataReader dr = cmd.ExecuteReader())
+        //            {
+        //                while (dr.Read())
+        //                {
+        //                    mainForm.listBoxDatabases.Items.Add(dr.GetString(0));
+        //                }
+        //            }
+        //        }
+        //    }
+        //}
     }
 }

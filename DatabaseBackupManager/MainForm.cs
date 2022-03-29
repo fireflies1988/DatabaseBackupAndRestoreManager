@@ -95,14 +95,12 @@ namespace DatabaseBackupManager
             backup_devicesTableAdapter.Fill(appData.backup_devices);
             foreach (DataRow row in userDatabasesTableAdapter.GetData().Rows)
             {
-                TreeNode node = new TreeNode(row["name"].ToString(), 2, 2);
-                treeViewExplorer.Nodes[0].Nodes[0].Nodes.Add(node);
+                treeViewExplorer.Nodes[0].Nodes[0].Nodes.Add(row["name"].ToString(), row["name"].ToString(), 2, 2);
             }
 
             foreach (DataRow row in backup_devicesTableAdapter.GetData().Rows)
             {
-                TreeNode node = new TreeNode(row["name"].ToString(), 3, 3);
-                treeViewExplorer.Nodes[0].Nodes[1].Nodes.Add(node);
+                treeViewExplorer.Nodes[0].Nodes[1].Nodes.Add(row["name"].ToString(), row["name"].ToString(), 3, 3);
             }
         }
 
@@ -114,14 +112,13 @@ namespace DatabaseBackupManager
 
             foreach (DataRow row in userDatabasesTableAdapter.GetData().Rows)
             {
-                TreeNode node = new TreeNode(row["name"].ToString(), 2, 2);
-                treeViewExplorer.Nodes[0].Nodes[0].Nodes.Add(node);
+                //TreeNode node = new TreeNode(row["name"].ToString(), 2, 2);
+                treeViewExplorer.Nodes[0].Nodes[0].Nodes.Add(row["name"].ToString(), row["name"].ToString(), 2, 2);
             }
 
             foreach (DataRow row in backup_devicesTableAdapter.GetData().Rows)
             {
-                TreeNode node = new TreeNode(row["name"].ToString(), 3, 3);
-                treeViewExplorer.Nodes[0].Nodes[1].Nodes.Add(node);
+                treeViewExplorer.Nodes[0].Nodes[1].Nodes.Add(row["name"].ToString(), row["name"].ToString(), 3, 3);
             }
         }
 
@@ -132,7 +129,7 @@ namespace DatabaseBackupManager
             {
                 string backupDeviceName = "bd_" + treeViewExplorer.SelectedNode.Text;
                 groupBoxBackupHistory.Visible = true;
-                backupHistoryTableAdapter.Connection.ConnectionString = Database.ConnectionString;
+                backupHistoryTableAdapter.Connection.ConnectionString = SqlServer.ConnectionString;
                 backupHistoryTableAdapter.Fill(appData.BackupHistory, backupDeviceName);
 
                 if (!BackupDeviceExists(backupDeviceName))
@@ -150,6 +147,9 @@ namespace DatabaseBackupManager
             else
             {
                 groupBoxBackupHistory.Visible = false;
+                newBackupDeviceToolStripMenuItem.Enabled = false;
+                backupToolStripMenuItem.Enabled = false;
+                restoreToolStripMenuItem.Enabled = false;
             }
         }
 
@@ -164,6 +164,11 @@ namespace DatabaseBackupManager
             //}
             //return false;
             return backupDevicesBindingSource.Find("name", backupDeviceName) > -1;
+        }
+
+        private void newBackupDeviceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new BackupDeviceForm(this).ShowDialog();
         }
     }
 }

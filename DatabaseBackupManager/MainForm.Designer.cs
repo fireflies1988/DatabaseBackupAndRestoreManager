@@ -116,6 +116,7 @@ namespace DatabaseBackupManager
             // 
             resources.ApplyResources(this.newBackupDeviceToolStripMenuItem, "newBackupDeviceToolStripMenuItem");
             this.newBackupDeviceToolStripMenuItem.Name = "newBackupDeviceToolStripMenuItem";
+            this.newBackupDeviceToolStripMenuItem.Click += new System.EventHandler(this.newBackupDeviceToolStripMenuItem_Click);
             // 
             // languageToolStripMenuItem
             // 
@@ -294,7 +295,6 @@ namespace DatabaseBackupManager
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem backupToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem restoreToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem newBackupDeviceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tiengVietToolStripMenuItem;
@@ -318,5 +318,6 @@ namespace DatabaseBackupManager
         private System.Windows.Forms.DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource backupDevicesBindingSource;
+        public System.Windows.Forms.ToolStripMenuItem newBackupDeviceToolStripMenuItem;
     }
 }
