@@ -857,6 +857,8 @@ namespace DatabaseBackupManager {
             
             private global::System.Data.DataColumn columndescription;
             
+            private global::System.Data.DataColumn columnname;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public BackupHistoryDataTable() {
@@ -932,6 +934,14 @@ namespace DatabaseBackupManager {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn nameColumn {
+                get {
+                    return this.columnname;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -967,14 +977,15 @@ namespace DatabaseBackupManager {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public BackupHistoryRow AddBackupHistoryRow(int position, System.DateTime backup_start_date, System.DateTime backup_finish_date, string user_name, string description) {
+            public BackupHistoryRow AddBackupHistoryRow(int position, System.DateTime backup_start_date, System.DateTime backup_finish_date, string user_name, string description, string name) {
                 BackupHistoryRow rowBackupHistoryRow = ((BackupHistoryRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         position,
                         backup_start_date,
                         backup_finish_date,
                         user_name,
-                        description};
+                        description,
+                        name};
                 rowBackupHistoryRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowBackupHistoryRow);
                 return rowBackupHistoryRow;
@@ -1002,6 +1013,7 @@ namespace DatabaseBackupManager {
                 this.columnbackup_finish_date = base.Columns["backup_finish_date"];
                 this.columnuser_name = base.Columns["user_name"];
                 this.columndescription = base.Columns["description"];
+                this.columnname = base.Columns["name"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1017,8 +1029,11 @@ namespace DatabaseBackupManager {
                 base.Columns.Add(this.columnuser_name);
                 this.columndescription = new global::System.Data.DataColumn("description", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columndescription);
+                this.columnname = new global::System.Data.DataColumn("name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnname);
                 this.columnuser_name.MaxLength = 128;
                 this.columndescription.MaxLength = 255;
+                this.columnname.MaxLength = 128;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1310,6 +1325,22 @@ namespace DatabaseBackupManager {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string name {
+                get {
+                    try {
+                        return ((string)(this[this.tableBackupHistory.nameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'name\' in table \'BackupHistory\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableBackupHistory.nameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IspositionNull() {
                 return this.IsNull(this.tableBackupHistory.positionColumn);
             }
@@ -1366,6 +1397,18 @@ namespace DatabaseBackupManager {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetdescriptionNull() {
                 this[this.tableBackupHistory.descriptionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsnameNull() {
+                return this.IsNull(this.tableBackupHistory.nameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetnameNull() {
+                this[this.tableBackupHistory.nameColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1936,6 +1979,7 @@ namespace DatabaseBackupManager.AppDataTableAdapters {
             tableMapping.ColumnMappings.Add("backup_finish_date", "backup_finish_date");
             tableMapping.ColumnMappings.Add("user_name", "user_name");
             tableMapping.ColumnMappings.Add("description", "description");
+            tableMapping.ColumnMappings.Add("name", "name");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -1952,27 +1996,33 @@ namespace DatabaseBackupManager.AppDataTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT position, backup_start_date, backup_finish_date, user_name, description
+            this._commandCollection[0].CommandText = @"SELECT position, backup_start_date, backup_finish_date, user_name, name, description
 FROM msdb.dbo.backupset bs JOIN msdb.dbo.backupmediafamily bmf 
 	ON bs.media_set_id = bmf.media_set_id
-WHERE bmf.logical_device_name = @BackupDeviceName
-	AND backup_set_id >= 
-		(SELECT MAX(backup_set_id) FROM msdb.dbo.backupset WHERE position = 1 AND media_set_id = bs.media_set_id)";
+WHERE logical_device_name = @BackupDeviceName AND database_name = @DatabaseName
+	AND backup_set_id >= (SELECT MAX(backup_set_id) FROM msdb.dbo.backupset WHERE position = 1 AND media_set_id = bs.media_set_id)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BackupDeviceName", global::System.Data.SqlDbType.NVarChar, 128, global::System.Data.ParameterDirection.Input, 0, 0, "logical_device_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DatabaseName", global::System.Data.SqlDbType.NVarChar, 128, global::System.Data.ParameterDirection.Input, 0, 0, "database_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(AppData.BackupHistoryDataTable dataTable, string BackupDeviceName) {
+        public virtual int Fill(AppData.BackupHistoryDataTable dataTable, string BackupDeviceName, string DatabaseName) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((BackupDeviceName == null)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((string)(BackupDeviceName));
+            }
+            if ((DatabaseName == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(DatabaseName));
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1985,13 +2035,19 @@ WHERE bmf.logical_device_name = @BackupDeviceName
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual AppData.BackupHistoryDataTable GetData(string BackupDeviceName) {
+        public virtual AppData.BackupHistoryDataTable GetData(string BackupDeviceName, string DatabaseName) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((BackupDeviceName == null)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((string)(BackupDeviceName));
+            }
+            if ((DatabaseName == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(DatabaseName));
             }
             AppData.BackupHistoryDataTable dataTable = new AppData.BackupHistoryDataTable();
             this.Adapter.Fill(dataTable);

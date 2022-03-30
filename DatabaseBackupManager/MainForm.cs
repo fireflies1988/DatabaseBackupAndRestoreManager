@@ -127,15 +127,17 @@ namespace DatabaseBackupManager
             if (treeViewExplorer.SelectedNode.Parent != null
                 && treeViewExplorer.SelectedNode.Parent.Name == "NodeDatabases")
             {
-                string backupDeviceName = "bd_" + treeViewExplorer.SelectedNode.Text;
+                string databaseName = treeViewExplorer.SelectedNode.Text;
+                string backupDeviceName = "bd_" + databaseName;
                 groupBoxBackupHistory.Visible = true;
                 backupHistoryTableAdapter.Connection.ConnectionString = SqlServer.ConnectionString;
-                backupHistoryTableAdapter.Fill(appData.BackupHistory, backupDeviceName);
+                backupHistoryTableAdapter.Fill(appData.BackupHistory, backupDeviceName, databaseName);
 
                 if (!BackupDeviceExists(backupDeviceName))
                 {
                     newBackupDeviceToolStripMenuItem.Enabled = true;
                     backupToolStripMenuItem.Enabled = false;
+                    restoreToolStripMenuItem.Enabled = false;
                 }
                 else
                 {
@@ -151,6 +153,12 @@ namespace DatabaseBackupManager
                 backupToolStripMenuItem.Enabled = false;
                 restoreToolStripMenuItem.Enabled = false;
             }
+        }
+
+        public void RefreshBackupHistoryTable(string backupDeviceName, string databaseName)
+        {
+            backupHistoryTableAdapter.Fill(appData.BackupHistory, backupDeviceName, databaseName);
+            restoreToolStripMenuItem.Enabled = backupHistoryBindingSource.Count > 0;
         }
 
         private bool BackupDeviceExists(string backupDeviceName)
@@ -169,6 +177,11 @@ namespace DatabaseBackupManager
         private void newBackupDeviceToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new BackupDeviceForm(this).ShowDialog();
+        }
+
+        private void backupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new BackupForm(this).ShowDialog();
         }
     }
 }

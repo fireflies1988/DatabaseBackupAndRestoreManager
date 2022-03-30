@@ -14,5 +14,15 @@ namespace DatabaseBackupManager
             "SELECT @BackupDirectory";
         public const string NEW_BACKUP_DEVICE =
                 "EXEC sp_addumpdevice @devtype = 'disk', @logicalname = '{0}', @physicalname = '{1}'";
+        /// <summary>
+        /// {0} - Database name
+        /// {1} - Backup device
+        /// </summary>
+        public const string BACKUP = "BACKUP DATABASE {0} TO {1} WITH NAME = '{2}', DESCRIPTION = '{3}'";
+        /// <summary>
+        /// {0} - Database name
+        /// {1} - Backup device
+        /// </summary>
+        public const string BACKUP_WITH_INIT = "BACKUP DATABASE {0} TO {1} WITH NAME = '{2}', DESCRIPTION = '{3}', INIT";
     }
 }
