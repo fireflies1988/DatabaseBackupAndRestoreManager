@@ -13,16 +13,18 @@ namespace DatabaseBackupManager
             @"EXEC master.dbo.xp_instance_regread @rootkey = 'HKEY_LOCAL_MACHINE', @key = 'Software\Microsoft\MSSQLServer\MSSQLServer', @value_name = 'BackupDirectory', @BackupDirectory = @BackupDirectory OUTPUT " +
             "SELECT @BackupDirectory";
         public const string NEW_BACKUP_DEVICE =
-                "EXEC sp_addumpdevice @devtype = 'disk', @logicalname = '{0}', @physicalname = '{1}'";
+            "EXEC sp_addumpdevice @devtype = 'disk', @logicalname = N'{0}', @physicalname = N'{1}'";
         /// <summary>
         /// {0} - Database name
         /// {1} - Backup device
         /// </summary>
-        public const string BACKUP = "BACKUP DATABASE {0} TO {1} WITH NAME = '{2}', DESCRIPTION = '{3}'";
+        public const string BACKUP = 
+            "BACKUP DATABASE [{0}] TO [{1}] WITH NAME = N'{2}', DESCRIPTION = N'{3}', STATS = 1";
         /// <summary>
         /// {0} - Database name
         /// {1} - Backup device
         /// </summary>
-        public const string BACKUP_WITH_INIT = "BACKUP DATABASE {0} TO {1} WITH NAME = '{2}', DESCRIPTION = '{3}', INIT";
+        public const string BACKUP_WITH_INIT = 
+            "BACKUP DATABASE [{0}] TO [{1}] WITH NAME = N'{2}', DESCRIPTION = N'{3}', INIT, STATS = 1";
     }
 }
