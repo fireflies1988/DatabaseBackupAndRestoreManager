@@ -73,6 +73,12 @@
       <DependentUpon>ConnectToServerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="QueryString.cs" />
+    <Compile Include="RestoreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RestoreForm.Designer.cs">
+      <DependentUpon>RestoreForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SqlServer.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -109,6 +115,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RestoreForm.resx">
+      <DependentUpon>RestoreForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="AppData.xsc">
       <DependentUpon>AppData.xsd</DependentUpon>
     </None>

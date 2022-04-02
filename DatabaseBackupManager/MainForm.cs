@@ -49,7 +49,7 @@ namespace DatabaseBackupManager
             {
                 changeLanguage(sender);
                 Utils.AddOrUpdateResource("lang", "en-US");
-                if (MessageBox.Show(this, "Ngôn ngữ hiển thị đã được thay đổi. Bạn phải khởi động lại ứng dụng để các thay đổi có hiệu lực." +
+                if (MessageBox.Show(this, "Ngôn ngữ hiển thị đã được thay đổi. Bạn cần phải khởi động lại ứng dụng để các thay đổi có hiệu lực." +
                     "\nBạn có muốn khởi động lại nó bây giờ không?", "Thay đổi ngôn ngữ", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
                     Application.Restart();
@@ -85,6 +85,10 @@ namespace DatabaseBackupManager
         private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
         {
             groupBoxBackupHistory.Visible = false;
+            newBackupDeviceToolStripMenuItem.Enabled = false;
+            backupToolStripMenuItem.Enabled = false;
+            restoreToolStripMenuItem.Enabled = false;
+
             treeViewExplorer.Nodes[0].Nodes[0].Nodes.Clear();
             treeViewExplorer.Nodes[0].Nodes[1].Nodes.Clear();
             PopulateTreeViewExplorer();
@@ -182,6 +186,11 @@ namespace DatabaseBackupManager
         private void backupToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new BackupForm(this).ShowDialog();
+        }
+
+        private void restoreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new RestoreForm(this).ShowDialog();
         }
     }
 }

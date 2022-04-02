@@ -33,6 +33,7 @@ namespace DatabaseBackupManager
         {
             panelBackupContent.Enabled = false;
             statusStripProcessStats.Visible = true;
+            statusStripProcessStats.Update();
             try
             {
                 SqlConnection connection = SqlServer.GetConnection();
@@ -56,6 +57,7 @@ namespace DatabaseBackupManager
             catch (Exception ex)
             {
                 MessageBox.Show(this, ex.Message, "Back Up Database", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                panelBackupContent.Enabled = true;
             }
         }
 

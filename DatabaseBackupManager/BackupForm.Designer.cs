@@ -74,7 +74,7 @@ namespace DatabaseBackupManager
             // toolStripStatusLabelBackingUp
             // 
             this.toolStripStatusLabelBackingUp.Name = "toolStripStatusLabelBackingUp";
-            this.toolStripStatusLabelBackingUp.Size = new System.Drawing.Size(377, 20);
+            this.toolStripStatusLabelBackingUp.Size = new System.Drawing.Size(416, 20);
             this.toolStripStatusLabelBackingUp.Spring = true;
             this.toolStripStatusLabelBackingUp.Text = "Backing up: ";
             this.toolStripStatusLabelBackingUp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -86,7 +86,6 @@ namespace DatabaseBackupManager
             // 
             // toolStripStatusLabelPercent
             // 
-            this.toolStripStatusLabelPercent.AutoSize = false;
             this.toolStripStatusLabelPercent.Name = "toolStripStatusLabelPercent";
             this.toolStripStatusLabelPercent.Size = new System.Drawing.Size(29, 20);
             this.toolStripStatusLabelPercent.Text = "0%";
