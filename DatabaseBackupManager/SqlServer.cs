@@ -55,5 +55,20 @@ namespace DatabaseBackupManager
                 }
             }
         }
+        
+        public static string ReadFirstCell(string cmdText)
+        {
+            using (SqlConnection con = SqlServer.GetConnection())
+            {
+                using (SqlCommand cmd = new SqlCommand(cmdText, con))
+                {
+                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        dr.Read();
+                        return dr.GetString(0);
+                    }
+                }
+            }
+        }
     }
 }

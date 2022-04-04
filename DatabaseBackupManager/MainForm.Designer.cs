@@ -47,18 +47,21 @@ namespace DatabaseBackupManager
             this.treeViewExplorer = new System.Windows.Forms.TreeView();
             this.groupBoxBackupHistory = new System.Windows.Forms.GroupBox();
             this.dataGridViewBackupHistory = new System.Windows.Forms.DataGridView();
-            this.backupHistoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.appData = new DatabaseBackupManager.AppData();
-            this.userDatabasesTableAdapter = new DatabaseBackupManager.AppDataTableAdapters.userDatabasesTableAdapter();
-            this.backup_devicesTableAdapter = new DatabaseBackupManager.AppDataTableAdapters.backup_devicesTableAdapter();
-            this.backupHistoryTableAdapter = new DatabaseBackupManager.AppDataTableAdapters.BackupHistoryTableAdapter();
-            this.backupDevicesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.position = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.backupstartdateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.backupfinishdateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.backupHistoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.appData = new DatabaseBackupManager.AppData();
+            this.userDatabasesTableAdapter = new DatabaseBackupManager.AppDataTableAdapters.userDatabasesTableAdapter();
+            this.backup_devicesTableAdapter = new DatabaseBackupManager.AppDataTableAdapters.backup_devicesTableAdapter();
+            this.backupHistoryTableAdapter = new DatabaseBackupManager.AppDataTableAdapters.BackupHistoryTableAdapter();
+            this.backupDevicesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.contextMenuStripBackupDevices = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.propertiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBoxExplorer.SuspendLayout();
             this.groupBoxBackupHistory.SuspendLayout();
@@ -66,6 +69,7 @@ namespace DatabaseBackupManager
             ((System.ComponentModel.ISupportInitialize)(this.backupHistoryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backupDevicesBindingSource)).BeginInit();
+            this.contextMenuStripBackupDevices.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -177,6 +181,7 @@ namespace DatabaseBackupManager
             this.treeViewExplorer.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             ((System.Windows.Forms.TreeNode)(resources.GetObject("treeViewExplorer.Nodes")))});
             this.treeViewExplorer.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeViewExplorer_AfterSelect);
+            this.treeViewExplorer.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeViewExplorer_NodeMouseClick);
             // 
             // groupBoxBackupHistory
             // 
@@ -207,33 +212,6 @@ namespace DatabaseBackupManager
             this.dataGridViewBackupHistory.Name = "dataGridViewBackupHistory";
             this.dataGridViewBackupHistory.ReadOnly = true;
             this.dataGridViewBackupHistory.RowTemplate.Height = 24;
-            // 
-            // backupHistoryBindingSource
-            // 
-            this.backupHistoryBindingSource.DataMember = "BackupHistory";
-            this.backupHistoryBindingSource.DataSource = this.appData;
-            // 
-            // appData
-            // 
-            this.appData.DataSetName = "AppData";
-            this.appData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // userDatabasesTableAdapter
-            // 
-            this.userDatabasesTableAdapter.ClearBeforeFill = true;
-            // 
-            // backup_devicesTableAdapter
-            // 
-            this.backup_devicesTableAdapter.ClearBeforeFill = true;
-            // 
-            // backupHistoryTableAdapter
-            // 
-            this.backupHistoryTableAdapter.ClearBeforeFill = true;
-            // 
-            // backupDevicesBindingSource
-            // 
-            this.backupDevicesBindingSource.DataMember = "backup_devices";
-            this.backupDevicesBindingSource.DataSource = this.appData;
             // 
             // position
             // 
@@ -277,6 +255,54 @@ namespace DatabaseBackupManager
             this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
             this.descriptionDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // backupHistoryBindingSource
+            // 
+            this.backupHistoryBindingSource.DataMember = "BackupHistory";
+            this.backupHistoryBindingSource.DataSource = this.appData;
+            // 
+            // appData
+            // 
+            this.appData.DataSetName = "AppData";
+            this.appData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // userDatabasesTableAdapter
+            // 
+            this.userDatabasesTableAdapter.ClearBeforeFill = true;
+            // 
+            // backup_devicesTableAdapter
+            // 
+            this.backup_devicesTableAdapter.ClearBeforeFill = true;
+            // 
+            // backupHistoryTableAdapter
+            // 
+            this.backupHistoryTableAdapter.ClearBeforeFill = true;
+            // 
+            // backupDevicesBindingSource
+            // 
+            this.backupDevicesBindingSource.DataMember = "backup_devices";
+            this.backupDevicesBindingSource.DataSource = this.appData;
+            // 
+            // contextMenuStripBackupDevices
+            // 
+            this.contextMenuStripBackupDevices.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStripBackupDevices.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.deleteToolStripMenuItem,
+            this.propertiesToolStripMenuItem});
+            this.contextMenuStripBackupDevices.Name = "contextMenuStripBackupDevices";
+            resources.ApplyResources(this.contextMenuStripBackupDevices, "contextMenuStripBackupDevices");
+            // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            resources.ApplyResources(this.deleteToolStripMenuItem, "deleteToolStripMenuItem");
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
+            // 
+            // propertiesToolStripMenuItem
+            // 
+            this.propertiesToolStripMenuItem.Name = "propertiesToolStripMenuItem";
+            resources.ApplyResources(this.propertiesToolStripMenuItem, "propertiesToolStripMenuItem");
+            this.propertiesToolStripMenuItem.Click += new System.EventHandler(this.propertiesToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -296,6 +322,7 @@ namespace DatabaseBackupManager
             ((System.ComponentModel.ISupportInitialize)(this.backupHistoryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.appData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.backupDevicesBindingSource)).EndInit();
+            this.contextMenuStripBackupDevices.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -331,5 +358,8 @@ namespace DatabaseBackupManager
         private System.Windows.Forms.DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStripBackupDevices;
+        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem propertiesToolStripMenuItem;
     }
 }

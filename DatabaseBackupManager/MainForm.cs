@@ -192,5 +192,44 @@ namespace DatabaseBackupManager
         {
             new RestoreForm(this).ShowDialog();
         }
+
+        private void treeViewExplorer_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            treeViewExplorer.SelectedNode = e.Node;
+            if (e.Button == MouseButtons.Right)
+            {
+                if (treeViewExplorer.SelectedNode.Parent != null
+                && treeViewExplorer.SelectedNode.Parent.Name == "NodeBackupDevices")
+                {
+                    contextMenuStripBackupDevices.Show(treeViewExplorer, e.Location);
+                }
+            }
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string selectedNode = treeViewExplorer.SelectedNode.Text;
+            if (MessageBox.Show(this, "All backups and backup history related to this backup device will " +
+                "be permanently deleted. You can’t undo this action. \nAre you sure you want to " +
+                "delete this backup device?",
+                $"Delete Backup Device - {selectedNode}", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                try
+                {
+                    SqlServer.ExecuteNonQuery(SqlServer.GetConnection(),
+                        string.Format(QueryString.DELETE_BACKUP_DEVICE, selectedNode, selectedNode.Substring(3)));
+                    refreshToolStripMenuItem.PerformClick();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(this, ex.Message, $"Delete Backup Device - {selectedNode}", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void propertiesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new BackupDevicePropertiesForm(this).ShowDialog();
+        }
     }
 }

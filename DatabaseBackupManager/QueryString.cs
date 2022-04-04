@@ -13,6 +13,8 @@ namespace DatabaseBackupManager
         public const string DEFAULT_BACKUP_LOCATION = @"DECLARE @BackupDirectory nvarchar(100) 
             EXEC master.dbo.xp_instance_regread @rootkey = 'HKEY_LOCAL_MACHINE', @key = 'Software\Microsoft\MSSQLServer\MSSQLServer', @value_name = 'BackupDirectory', @BackupDirectory = @BackupDirectory OUTPUT
             SELECT @BackupDirectory";
+        public const string BACKUP_DEVICE_LOCATION =
+            "SELECT physical_name FROM sys.backup_devices WHERE name = N'{0}'";
         public const string NEW_BACKUP_DEVICE =
             "EXEC sp_addumpdevice @devtype = 'disk', @logicalname = N'{0}', @physicalname = N'{1}'";
         /// <summary>
@@ -49,5 +51,12 @@ namespace DatabaseBackupManager
             RESTORE LOG [{0}] FROM DISK = '" + TEMP_BACKUP_LOG + @"' WITH STOPAT = '{3}', NORECOVERY, STATS = 1
             RESTORE DATABASE [{0}] WITH RECOVERY
             ALTER DATABASE [{0}] SET MULTI_USER";
+        /// <summary>
+        /// {0} Backup device
+        /// {1} Database name
+        /// </summary>
+        public const string DELETE_BACKUP_DEVICE =
+            @"EXEC sp_dropdevice '{0}', 'delfile'
+            EXEC msdb.dbo.sp_delete_database_backuphistory @database_name = N'{1}'";
     }
 }

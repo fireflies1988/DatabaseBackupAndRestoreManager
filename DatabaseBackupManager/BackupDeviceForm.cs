@@ -44,18 +44,8 @@ namespace DatabaseBackupManager
             
             try
             {
-                using (SqlConnection con = SqlServer.GetConnection())
-                {
-                    using (SqlCommand cmd = new SqlCommand(QueryString.DEFAULT_BACKUP_LOCATION, con))
-                    {
-                        using (SqlDataReader dr = cmd.ExecuteReader())
-                        {
-                            dr.Read();
-                            folderBrowserDialog.SelectedPath = dr.GetString(0);
-                            textBoxLocation.Text = folderBrowserDialog.SelectedPath + "\\" + textBoxDeviceName.Text + ".bak";
-                        }
-                    }
-                }
+                folderBrowserDialog.SelectedPath = SqlServer.ReadFirstCell(QueryString.DEFAULT_BACKUP_LOCATION);
+                textBoxLocation.Text = folderBrowserDialog.SelectedPath + "\\" + textBoxDeviceName.Text + ".bak";
             }
             catch (Exception ex)
             {
@@ -67,7 +57,8 @@ namespace DatabaseBackupManager
         {
             if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
             {
-                textBoxLocation.Text = folderBrowserDialog.SelectedPath + "\\" + textBoxDeviceName.Text + ".bak";
+                textBoxLocation.Text = folderBrowserDialog.SelectedPath + 
+                    (folderBrowserDialog.SelectedPath.EndsWith("\\") ? "" : "\\") + textBoxDeviceName.Text + ".bak";
             }
         }
     }
