@@ -57,13 +57,13 @@ namespace DatabaseBackupManager
                     SqlServer.ExecuteNonQuery(connection,
                         string.Format(QueryString.RESTORE, textBoxDatabase.Text, textBoxBackupDevice.Text, comboBoxPosition.Text));
                 }
-                MessageBox.Show(this, "Database '" + textBoxDatabase.Text + "' restored successfully.",
-                    "Restore Database", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(this, GlobalStrings.RestoreDatabaseHeadText + textBoxDatabase.Text + GlobalStrings.RestoreDatabaseTailText,
+                    GlobalStrings.RestoreDatabaseCaption, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(this, ex.Message, "Restore Database", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(this, ex.Message, GlobalStrings.RestoreDatabaseCaption, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 panelRestoreContent.Enabled = true;
             }
         }
@@ -82,7 +82,7 @@ namespace DatabaseBackupManager
         {
             if (comboBoxPosition.SelectedValue != null)
             {
-                toolStripStatusLabelRestoring.Text = "Restoring: " + comboBoxPosition.SelectedValue.ToString();
+                toolStripStatusLabelRestoring.Text = GlobalStrings.RestoringText + comboBoxPosition.SelectedValue.ToString();
             }
         }
 

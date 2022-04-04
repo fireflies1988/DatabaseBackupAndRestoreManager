@@ -10,6 +10,8 @@ namespace DatabaseBackupManager
 
         public ConnectToServerForm(MainForm mainForm)
         {
+            Utils.ChangeLanguage(Utils.ReadResource("lang"));
+
             this.mainForm = mainForm;
             InitializeComponent();
         }
@@ -86,7 +88,7 @@ namespace DatabaseBackupManager
             }
             catch (Exception ex)
             {
-                MessageBox.Show(this, ex.Message, "Connect to Server", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(this, ex.Message, GlobalStrings.ConnectToServerCaption, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 

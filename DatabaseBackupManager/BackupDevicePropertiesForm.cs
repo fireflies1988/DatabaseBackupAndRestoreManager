@@ -6,8 +6,11 @@ namespace DatabaseBackupManager
     public partial class BackupDevicePropertiesForm : Form
     {
         private MainForm mainForm;
+
         public BackupDevicePropertiesForm(MainForm mainForm)
         {
+            Utils.ChangeLanguage(Utils.ReadResource("lang"));
+
             this.mainForm = mainForm;
             InitializeComponent();
         }

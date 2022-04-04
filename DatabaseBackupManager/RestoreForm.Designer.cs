@@ -29,6 +29,7 @@ namespace DatabaseBackupManager
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RestoreForm));
             this.panelRestoreContent = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.radioButtonTimeOption = new System.Windows.Forms.RadioButton();
@@ -71,11 +72,8 @@ namespace DatabaseBackupManager
             this.panelRestoreContent.Controls.Add(this.label3);
             this.panelRestoreContent.Controls.Add(this.textBoxDatabase);
             this.panelRestoreContent.Controls.Add(this.label1);
-            this.panelRestoreContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelRestoreContent.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.panelRestoreContent, "panelRestoreContent");
             this.panelRestoreContent.Name = "panelRestoreContent";
-            this.panelRestoreContent.Size = new System.Drawing.Size(665, 335);
-            this.panelRestoreContent.TabIndex = 0;
             // 
             // panel1
             // 
@@ -83,72 +81,50 @@ namespace DatabaseBackupManager
             this.panel1.Controls.Add(this.radioButtonChooseBackupSet);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.comboBoxPosition);
-            this.panel1.Location = new System.Drawing.Point(38, 100);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(602, 60);
-            this.panel1.TabIndex = 43;
             // 
             // radioButtonTimeOption
             // 
-            this.radioButtonTimeOption.AutoSize = true;
-            this.radioButtonTimeOption.Location = new System.Drawing.Point(3, 34);
+            resources.ApplyResources(this.radioButtonTimeOption, "radioButtonTimeOption");
             this.radioButtonTimeOption.Name = "radioButtonTimeOption";
-            this.radioButtonTimeOption.Size = new System.Drawing.Size(340, 21);
-            this.radioButtonTimeOption.TabIndex = 47;
-            this.radioButtonTimeOption.Text = "Specific date and time after the last backup taken";
             this.radioButtonTimeOption.UseVisualStyleBackColor = true;
             this.radioButtonTimeOption.CheckedChanged += new System.EventHandler(this.radioButtonTimeOption_CheckedChanged);
             // 
             // radioButtonChooseBackupSet
             // 
-            this.radioButtonChooseBackupSet.AutoSize = true;
+            resources.ApplyResources(this.radioButtonChooseBackupSet, "radioButtonChooseBackupSet");
             this.radioButtonChooseBackupSet.Checked = true;
-            this.radioButtonChooseBackupSet.Location = new System.Drawing.Point(3, 6);
             this.radioButtonChooseBackupSet.Name = "radioButtonChooseBackupSet";
-            this.radioButtonChooseBackupSet.Size = new System.Drawing.Size(54, 21);
-            this.radioButtonChooseBackupSet.TabIndex = 46;
             this.radioButtonChooseBackupSet.TabStop = true;
-            this.radioButtonChooseBackupSet.Text = "The";
             this.radioButtonChooseBackupSet.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(137, 8);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(232, 17);
-            this.label5.TabIndex = 45;
-            this.label5.Text = "th backup set on the backup device";
             // 
             // comboBoxPosition
             // 
             this.comboBoxPosition.DisplayMember = "name";
             this.comboBoxPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxPosition.FormattingEnabled = true;
-            this.comboBoxPosition.Location = new System.Drawing.Point(61, 4);
+            resources.ApplyResources(this.comboBoxPosition, "comboBoxPosition");
             this.comboBoxPosition.Name = "comboBoxPosition";
-            this.comboBoxPosition.Size = new System.Drawing.Size(74, 24);
-            this.comboBoxPosition.TabIndex = 44;
             this.comboBoxPosition.ValueMember = "name";
             this.comboBoxPosition.TextChanged += new System.EventHandler(this.comboBoxPosition_TextChanged);
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(497, 269);
+            resources.ApplyResources(this.buttonCancel, "buttonCancel");
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(143, 30);
-            this.buttonCancel.TabIndex = 42;
-            this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonOK
             // 
-            this.buttonOK.Location = new System.Drawing.Point(348, 269);
+            resources.ApplyResources(this.buttonOK, "buttonOK");
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(143, 30);
-            this.buttonOK.TabIndex = 41;
-            this.buttonOK.Text = "OK";
             this.buttonOK.UseVisualStyleBackColor = true;
             this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
             // 
@@ -159,107 +135,70 @@ namespace DatabaseBackupManager
             this.panelDateAndTime.Controls.Add(this.label6);
             this.panelDateAndTime.Controls.Add(this.dateTimePickerDate);
             this.panelDateAndTime.Controls.Add(this.label2);
-            this.panelDateAndTime.Enabled = false;
-            this.panelDateAndTime.Location = new System.Drawing.Point(38, 162);
+            resources.ApplyResources(this.panelDateAndTime, "panelDateAndTime");
             this.panelDateAndTime.Name = "panelDateAndTime";
-            this.panelDateAndTime.Size = new System.Drawing.Size(602, 92);
-            this.panelDateAndTime.TabIndex = 40;
             // 
             // label8
             // 
             this.label8.BackColor = System.Drawing.SystemColors.Info;
-            this.label8.Location = new System.Drawing.Point(19, 62);
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(583, 23);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "The date and time here must be at or after the time of the last backup taken.";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // dateTimePickerTime
             // 
             this.dateTimePickerTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePickerTime.Location = new System.Drawing.Point(175, 28);
+            resources.ApplyResources(this.dateTimePickerTime, "dateTimePickerTime");
             this.dateTimePickerTime.Name = "dateTimePickerTime";
             this.dateTimePickerTime.ShowUpDown = true;
-            this.dateTimePickerTime.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePickerTime.TabIndex = 3;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(46, 33);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(43, 17);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Time:";
             // 
             // dateTimePickerDate
             // 
             this.dateTimePickerDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerDate.Location = new System.Drawing.Point(175, 0);
+            resources.ApplyResources(this.dateTimePickerDate, "dateTimePickerDate");
             this.dateTimePickerDate.Name = "dateTimePickerDate";
-            this.dateTimePickerDate.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePickerDate.TabIndex = 1;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(46, 5);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 17);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Date:";
             // 
             // label7
             // 
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label7.Location = new System.Drawing.Point(97, 87);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(543, 2);
-            this.label7.TabIndex = 33;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 80);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 17);
-            this.label4.TabIndex = 32;
-            this.label4.Text = "Restore to";
             // 
             // textBoxBackupDevice
             // 
-            this.textBoxBackupDevice.Location = new System.Drawing.Point(191, 43);
+            resources.ApplyResources(this.textBoxBackupDevice, "textBoxBackupDevice");
             this.textBoxBackupDevice.Name = "textBoxBackupDevice";
             this.textBoxBackupDevice.ReadOnly = true;
-            this.textBoxBackupDevice.Size = new System.Drawing.Size(449, 22);
-            this.textBoxBackupDevice.TabIndex = 31;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 46);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 17);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "Backup device:";
             // 
             // textBoxDatabase
             // 
-            this.textBoxDatabase.Location = new System.Drawing.Point(191, 15);
+            resources.ApplyResources(this.textBoxDatabase, "textBoxDatabase");
             this.textBoxDatabase.Name = "textBoxDatabase";
             this.textBoxDatabase.ReadOnly = true;
-            this.textBoxDatabase.Size = new System.Drawing.Size(449, 22);
-            this.textBoxDatabase.TabIndex = 27;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 18);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 17);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "Database:";
             // 
             // statusStripProcessStats
             // 
@@ -268,47 +207,36 @@ namespace DatabaseBackupManager
             this.toolStripStatusLabelRestoring,
             this.toolStripProgressBarRestoring,
             this.toolStripStatusLabelPercent});
-            this.statusStripProcessStats.Location = new System.Drawing.Point(0, 309);
+            resources.ApplyResources(this.statusStripProcessStats, "statusStripProcessStats");
             this.statusStripProcessStats.Name = "statusStripProcessStats";
-            this.statusStripProcessStats.Size = new System.Drawing.Size(665, 26);
             this.statusStripProcessStats.SizingGrip = false;
-            this.statusStripProcessStats.TabIndex = 21;
-            this.statusStripProcessStats.Text = "statusStrip1";
-            this.statusStripProcessStats.Visible = false;
             // 
             // toolStripStatusLabelRestoring
             // 
             this.toolStripStatusLabelRestoring.Name = "toolStripStatusLabelRestoring";
-            this.toolStripStatusLabelRestoring.Size = new System.Drawing.Size(419, 20);
+            resources.ApplyResources(this.toolStripStatusLabelRestoring, "toolStripStatusLabelRestoring");
             this.toolStripStatusLabelRestoring.Spring = true;
-            this.toolStripStatusLabelRestoring.Text = "Restoring: ";
-            this.toolStripStatusLabelRestoring.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // toolStripProgressBarRestoring
             // 
             this.toolStripProgressBarRestoring.Name = "toolStripProgressBarRestoring";
-            this.toolStripProgressBarRestoring.Size = new System.Drawing.Size(200, 18);
+            resources.ApplyResources(this.toolStripProgressBarRestoring, "toolStripProgressBarRestoring");
             // 
             // toolStripStatusLabelPercent
             // 
-            this.toolStripStatusLabelPercent.AutoSize = false;
+            resources.ApplyResources(this.toolStripStatusLabelPercent, "toolStripStatusLabelPercent");
             this.toolStripStatusLabelPercent.Name = "toolStripStatusLabelPercent";
-            this.toolStripStatusLabelPercent.Size = new System.Drawing.Size(29, 20);
-            this.toolStripStatusLabelPercent.Text = "0%";
             // 
             // RestoreForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(665, 335);
             this.Controls.Add(this.statusStripProcessStats);
             this.Controls.Add(this.panelRestoreContent);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "RestoreForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Restore Database - ";
             this.Load += new System.EventHandler(this.RestoreForm_Load);
             this.panelRestoreContent.ResumeLayout(false);
             this.panelRestoreContent.PerformLayout();

@@ -74,8 +74,8 @@ namespace DatabaseBackupManager
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.Control;
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.Control;
             this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -127,31 +127,31 @@ namespace DatabaseBackupManager
             // 
             // languageToolStripMenuItem
             // 
+            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
             this.languageToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.englishToolStripMenuItem,
             this.tiengVietToolStripMenuItem});
-            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
             // 
             // englishToolStripMenuItem
             // 
+            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
             this.englishToolStripMenuItem.Checked = true;
             this.englishToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
             this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // tiengVietToolStripMenuItem
             // 
-            this.tiengVietToolStripMenuItem.Name = "tiengVietToolStripMenuItem";
             resources.ApplyResources(this.tiengVietToolStripMenuItem, "tiengVietToolStripMenuItem");
+            this.tiengVietToolStripMenuItem.Name = "tiengVietToolStripMenuItem";
             this.tiengVietToolStripMenuItem.Click += new System.EventHandler(this.tiengVietToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             resources.ApplyResources(this.statusStrip1, "statusStrip1");
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Name = "statusStrip1";
             // 
             // imageListExplorer
@@ -165,16 +165,16 @@ namespace DatabaseBackupManager
             // 
             // groupBoxExplorer
             // 
-            this.groupBoxExplorer.Controls.Add(this.treeViewExplorer);
             resources.ApplyResources(this.groupBoxExplorer, "groupBoxExplorer");
+            this.groupBoxExplorer.Controls.Add(this.treeViewExplorer);
             this.groupBoxExplorer.Name = "groupBoxExplorer";
             this.groupBoxExplorer.TabStop = false;
             // 
             // treeViewExplorer
             // 
+            resources.ApplyResources(this.treeViewExplorer, "treeViewExplorer");
             this.treeViewExplorer.BackColor = System.Drawing.SystemColors.Window;
             this.treeViewExplorer.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.treeViewExplorer, "treeViewExplorer");
             this.treeViewExplorer.HideSelection = false;
             this.treeViewExplorer.ImageList = this.imageListExplorer;
             this.treeViewExplorer.Name = "treeViewExplorer";
@@ -192,6 +192,7 @@ namespace DatabaseBackupManager
             // 
             // dataGridViewBackupHistory
             // 
+            resources.ApplyResources(this.dataGridViewBackupHistory, "dataGridViewBackupHistory");
             this.dataGridViewBackupHistory.AllowUserToAddRows = false;
             this.dataGridViewBackupHistory.AllowUserToDeleteRows = false;
             this.dataGridViewBackupHistory.AllowUserToOrderColumns = true;
@@ -208,7 +209,6 @@ namespace DatabaseBackupManager
             this.Column1,
             this.descriptionDataGridViewTextBoxColumn});
             this.dataGridViewBackupHistory.DataSource = this.backupHistoryBindingSource;
-            resources.ApplyResources(this.dataGridViewBackupHistory, "dataGridViewBackupHistory");
             this.dataGridViewBackupHistory.Name = "dataGridViewBackupHistory";
             this.dataGridViewBackupHistory.ReadOnly = true;
             this.dataGridViewBackupHistory.RowTemplate.Height = 24;
@@ -284,30 +284,30 @@ namespace DatabaseBackupManager
             // 
             // contextMenuStripBackupDevices
             // 
+            resources.ApplyResources(this.contextMenuStripBackupDevices, "contextMenuStripBackupDevices");
             this.contextMenuStripBackupDevices.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripBackupDevices.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.deleteToolStripMenuItem,
             this.propertiesToolStripMenuItem});
             this.contextMenuStripBackupDevices.Name = "contextMenuStripBackupDevices";
-            resources.ApplyResources(this.contextMenuStripBackupDevices, "contextMenuStripBackupDevices");
             // 
             // deleteToolStripMenuItem
             // 
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
             resources.ApplyResources(this.deleteToolStripMenuItem, "deleteToolStripMenuItem");
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // propertiesToolStripMenuItem
             // 
-            this.propertiesToolStripMenuItem.Name = "propertiesToolStripMenuItem";
             resources.ApplyResources(this.propertiesToolStripMenuItem, "propertiesToolStripMenuItem");
+            this.propertiesToolStripMenuItem.Name = "propertiesToolStripMenuItem";
             this.propertiesToolStripMenuItem.Click += new System.EventHandler(this.propertiesToolStripMenuItem_Click);
             // 
             // MainForm
             // 
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Window;
-            resources.ApplyResources(this, "$this");
             this.Controls.Add(this.groupBoxBackupHistory);
             this.Controls.Add(this.groupBoxExplorer);
             this.Controls.Add(this.statusStrip1);

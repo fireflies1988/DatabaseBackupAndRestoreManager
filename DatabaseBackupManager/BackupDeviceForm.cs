@@ -9,6 +9,8 @@ namespace DatabaseBackupManager
         private MainForm mainForm;
         public BackupDeviceForm(MainForm mainForm)
         {
+            Utils.ChangeLanguage(Utils.ReadResource("lang"));
+
             this.mainForm = mainForm;
             InitializeComponent();
         }

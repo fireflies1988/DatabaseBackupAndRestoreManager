@@ -9,6 +9,8 @@ namespace DatabaseBackupManager
         private MainForm mainForm;
         public BackupForm(MainForm mainForm)
         {
+            Utils.ChangeLanguage(Utils.ReadResource("lang"));
+
             this.mainForm = mainForm;
             InitializeComponent();
         }
@@ -49,14 +51,14 @@ namespace DatabaseBackupManager
                     SqlServer.ExecuteNonQuery(connection,
                         string.Format(QueryString.BACKUP, textBoxDatabase.Text, textBoxBackupDevice.Text, textBoxName.Text, textBoxDescription.Text));
                 }
-                MessageBox.Show(this, "The backup of database '" + textBoxDatabase.Text + "' completed successfully.",
-                    "Back Up Database", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(this, GlobalStrings.BackUpDatabaseHeadText + textBoxDatabase.Text + GlobalStrings.BackUpDatabaseTailText,
+                    GlobalStrings.BackUpDatabaseCaption, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Close();
                 mainForm.RefreshBackupHistoryTable(textBoxBackupDevice.Text, textBoxDatabase.Text);
             }
             catch (Exception ex)
             {
-                MessageBox.Show(this, ex.Message, "Back Up Database", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(this, ex.Message, GlobalStrings.BackUpDatabaseCaption, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 panelBackupContent.Enabled = true;
             }
         }

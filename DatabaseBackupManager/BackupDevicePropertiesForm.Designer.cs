@@ -29,6 +29,7 @@ namespace DatabaseBackupManager
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BackupDevicePropertiesForm));
             this.buttonOK = new System.Windows.Forms.Button();
             this.textBoxLocation = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,53 +39,38 @@ namespace DatabaseBackupManager
             // 
             // buttonOK
             // 
-            this.buttonOK.Location = new System.Drawing.Point(464, 90);
+            resources.ApplyResources(this.buttonOK, "buttonOK");
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(105, 27);
-            this.buttonOK.TabIndex = 11;
-            this.buttonOK.Text = "OK";
             this.buttonOK.UseVisualStyleBackColor = true;
             this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
             // 
             // textBoxLocation
             // 
+            resources.ApplyResources(this.textBoxLocation, "textBoxLocation");
             this.textBoxLocation.BackColor = System.Drawing.SystemColors.Control;
-            this.textBoxLocation.Location = new System.Drawing.Point(136, 42);
             this.textBoxLocation.Name = "textBoxLocation";
             this.textBoxLocation.ReadOnly = true;
-            this.textBoxLocation.Size = new System.Drawing.Size(433, 22);
-            this.textBoxLocation.TabIndex = 10;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 45);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 17);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Location:";
             // 
             // textBoxDeviceName
             // 
-            this.textBoxDeviceName.Location = new System.Drawing.Point(136, 14);
+            resources.ApplyResources(this.textBoxDeviceName, "textBoxDeviceName");
             this.textBoxDeviceName.Name = "textBoxDeviceName";
             this.textBoxDeviceName.ReadOnly = true;
-            this.textBoxDeviceName.Size = new System.Drawing.Size(433, 22);
-            this.textBoxDeviceName.TabIndex = 8;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 17);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 17);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Device name:";
             // 
             // BackupDevicePropertiesForm
             // 
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(589, 129);
             this.Controls.Add(this.buttonOK);
             this.Controls.Add(this.textBoxLocation);
             this.Controls.Add(this.label2);
@@ -94,8 +80,6 @@ namespace DatabaseBackupManager
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "BackupDevicePropertiesForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Backup Device";
             this.Load += new System.EventHandler(this.BackupDevicePropertiesForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

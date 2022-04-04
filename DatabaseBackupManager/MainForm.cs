@@ -1,9 +1,6 @@
-﻿using DatabaseBackupManager.Properties;
-using System;
+﻿using System;
 using System.Data;
-using System.Globalization;
 using System.Linq;
-using System.Threading;
 using System.Windows.Forms;
 
 namespace DatabaseBackupManager
@@ -17,10 +14,8 @@ namespace DatabaseBackupManager
 
         private void Init()
         {
-            //ResourceManager rm = new ResourceManager("DatabaseBackupManager.Properties.Resources", Assembly.GetExecutingAssembly());
             string lang = Utils.ReadResource("lang");
-            Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo(lang);
-            Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo(lang);
+            Utils.ChangeLanguage(lang);
 
             InitializeComponent();
             if (lang == "vi-VN")
@@ -31,7 +26,7 @@ namespace DatabaseBackupManager
             }
         }
 
-        private void changeLanguage(object selectedMenuItem)
+        private void changeLanguageToolStripMenuItem(object selectedMenuItem)
         {
             ToolStripMenuItem currentItem = selectedMenuItem as ToolStripMenuItem;
             ((ToolStripMenuItem)currentItem.OwnerItem).DropDownItems.OfType<ToolStripMenuItem>().ToList()
@@ -47,7 +42,7 @@ namespace DatabaseBackupManager
         {
             if (!englishToolStripMenuItem.Checked)
             {
-                changeLanguage(sender);
+                changeLanguageToolStripMenuItem(sender);
                 Utils.AddOrUpdateResource("lang", "en-US");
                 if (MessageBox.Show(this, "Ngôn ngữ hiển thị đã được thay đổi. Bạn cần phải khởi động lại ứng dụng để các thay đổi có hiệu lực." +
                     "\nBạn có muốn khởi động lại nó bây giờ không?", "Thay đổi ngôn ngữ", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
@@ -61,7 +56,7 @@ namespace DatabaseBackupManager
         {
             if (!tiengVietToolStripMenuItem.Checked)
             {
-                changeLanguage(sender);
+                changeLanguageToolStripMenuItem(sender);
                 Utils.AddOrUpdateResource("lang", "vi-VN");
                 if (MessageBox.Show(this, "Display language has been changed. You must restart the application for changes to take effect." +
                     "\nDo you want to restart it now?", "Change language", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
@@ -209,10 +204,8 @@ namespace DatabaseBackupManager
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string selectedNode = treeViewExplorer.SelectedNode.Text;
-            if (MessageBox.Show(this, "All backups and backup history related to this backup device will " +
-                "be permanently deleted. You can’t undo this action. \nAre you sure you want to " +
-                "delete this backup device?",
-                $"Delete Backup Device - {selectedNode}", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            if (MessageBox.Show(this, GlobalStrings.DeleteBackupDeviceWarningText,
+                $"{GlobalStrings.DeleteBackupDeviceCaption} - {selectedNode}", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 try
                 {
@@ -222,7 +215,7 @@ namespace DatabaseBackupManager
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(this, ex.Message, $"Delete Backup Device - {selectedNode}", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(this, ex.Message, $"{GlobalStrings.DeleteBackupDeviceCaption} - {selectedNode}", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }

@@ -29,6 +29,7 @@ namespace DatabaseBackupManager
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BackupForm));
             this.statusStripProcessStats = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabelBackingUp = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripProgressBarBackingUp = new System.Windows.Forms.ToolStripProgressBar();
@@ -63,32 +64,25 @@ namespace DatabaseBackupManager
             this.toolStripStatusLabelBackingUp,
             this.toolStripProgressBarBackingUp,
             this.toolStripStatusLabelPercent});
-            this.statusStripProcessStats.Location = new System.Drawing.Point(0, 300);
+            resources.ApplyResources(this.statusStripProcessStats, "statusStripProcessStats");
             this.statusStripProcessStats.Name = "statusStripProcessStats";
-            this.statusStripProcessStats.Size = new System.Drawing.Size(662, 26);
             this.statusStripProcessStats.SizingGrip = false;
-            this.statusStripProcessStats.TabIndex = 20;
-            this.statusStripProcessStats.Text = "statusStrip1";
-            this.statusStripProcessStats.Visible = false;
             // 
             // toolStripStatusLabelBackingUp
             // 
             this.toolStripStatusLabelBackingUp.Name = "toolStripStatusLabelBackingUp";
-            this.toolStripStatusLabelBackingUp.Size = new System.Drawing.Size(416, 20);
+            resources.ApplyResources(this.toolStripStatusLabelBackingUp, "toolStripStatusLabelBackingUp");
             this.toolStripStatusLabelBackingUp.Spring = true;
-            this.toolStripStatusLabelBackingUp.Text = "Backing up: ";
-            this.toolStripStatusLabelBackingUp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // toolStripProgressBarBackingUp
             // 
             this.toolStripProgressBarBackingUp.Name = "toolStripProgressBarBackingUp";
-            this.toolStripProgressBarBackingUp.Size = new System.Drawing.Size(200, 18);
+            resources.ApplyResources(this.toolStripProgressBarBackingUp, "toolStripProgressBarBackingUp");
             // 
             // toolStripStatusLabelPercent
             // 
             this.toolStripStatusLabelPercent.Name = "toolStripStatusLabelPercent";
-            this.toolStripStatusLabelPercent.Size = new System.Drawing.Size(29, 20);
-            this.toolStripStatusLabelPercent.Text = "0%";
+            resources.ApplyResources(this.toolStripStatusLabelPercent, "toolStripStatusLabelPercent");
             // 
             // panelBackupContent
             // 
@@ -107,178 +101,118 @@ namespace DatabaseBackupManager
             this.panelBackupContent.Controls.Add(this.label2);
             this.panelBackupContent.Controls.Add(this.textBoxDatabase);
             this.panelBackupContent.Controls.Add(this.label1);
-            this.panelBackupContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelBackupContent.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.panelBackupContent, "panelBackupContent");
             this.panelBackupContent.Name = "panelBackupContent";
-            this.panelBackupContent.Size = new System.Drawing.Size(662, 326);
-            this.panelBackupContent.TabIndex = 21;
             // 
             // textBoxDescription
             // 
-            this.textBoxDescription.Location = new System.Drawing.Point(193, 219);
+            resources.ApplyResources(this.textBoxDescription, "textBoxDescription");
             this.textBoxDescription.Name = "textBoxDescription";
-            this.textBoxDescription.Size = new System.Drawing.Size(449, 22);
-            this.textBoxDescription.TabIndex = 34;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(20, 222);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 17);
-            this.label6.TabIndex = 33;
-            this.label6.Text = "Description:";
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(499, 259);
+            resources.ApplyResources(this.buttonCancel, "buttonCancel");
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(143, 30);
-            this.buttonCancel.TabIndex = 32;
-            this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonOK
             // 
-            this.buttonOK.Location = new System.Drawing.Point(350, 259);
+            resources.ApplyResources(this.buttonOK, "buttonOK");
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(143, 30);
-            this.buttonOK.TabIndex = 31;
-            this.buttonOK.Text = "OK";
             this.buttonOK.UseVisualStyleBackColor = true;
             this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(193, 191);
+            resources.ApplyResources(this.textBoxName, "textBoxName");
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(449, 22);
-            this.textBoxName.TabIndex = 30;
-            this.textBoxName.Text = "-Full Database Backup";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 194);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 17);
-            this.label5.TabIndex = 29;
-            this.label5.Text = "Name:";
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.radioButtonOverwrite);
             this.panel2.Controls.Add(this.radioButtonAppend);
-            this.panel2.Location = new System.Drawing.Point(23, 126);
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(619, 59);
-            this.panel2.TabIndex = 28;
             // 
             // radioButtonOverwrite
             // 
-            this.radioButtonOverwrite.AutoSize = true;
-            this.radioButtonOverwrite.Location = new System.Drawing.Point(3, 30);
+            resources.ApplyResources(this.radioButtonOverwrite, "radioButtonOverwrite");
             this.radioButtonOverwrite.Name = "radioButtonOverwrite";
-            this.radioButtonOverwrite.Size = new System.Drawing.Size(238, 21);
-            this.radioButtonOverwrite.TabIndex = 1;
-            this.radioButtonOverwrite.Text = "Overwrite all existing backup sets";
             this.radioButtonOverwrite.UseVisualStyleBackColor = true;
             // 
             // radioButtonAppend
             // 
-            this.radioButtonAppend.AutoSize = true;
+            resources.ApplyResources(this.radioButtonAppend, "radioButtonAppend");
             this.radioButtonAppend.Checked = true;
-            this.radioButtonAppend.Location = new System.Drawing.Point(3, 3);
             this.radioButtonAppend.Name = "radioButtonAppend";
-            this.radioButtonAppend.Size = new System.Drawing.Size(242, 21);
-            this.radioButtonAppend.TabIndex = 0;
             this.radioButtonAppend.TabStop = true;
-            this.radioButtonAppend.Text = "Append to the existing backup set";
             this.radioButtonAppend.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label7.Location = new System.Drawing.Point(134, 113);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(508, 2);
-            this.label7.TabIndex = 27;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(20, 106);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 17);
-            this.label4.TabIndex = 26;
-            this.label4.Text = "Backup Options";
             // 
             // textBoxBackupDevice
             // 
-            this.textBoxBackupDevice.Location = new System.Drawing.Point(193, 67);
+            resources.ApplyResources(this.textBoxBackupDevice, "textBoxBackupDevice");
             this.textBoxBackupDevice.Name = "textBoxBackupDevice";
             this.textBoxBackupDevice.ReadOnly = true;
-            this.textBoxBackupDevice.Size = new System.Drawing.Size(449, 22);
-            this.textBoxBackupDevice.TabIndex = 25;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 70);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 17);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "Backup device:";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(193, 39);
+            resources.ApplyResources(this.textBox2, "textBox2");
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(449, 22);
-            this.textBox2.TabIndex = 23;
-            this.textBox2.Text = "Full";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 42);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 17);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Backup type:";
             // 
             // textBoxDatabase
             // 
-            this.textBoxDatabase.Location = new System.Drawing.Point(193, 11);
+            resources.ApplyResources(this.textBoxDatabase, "textBoxDatabase");
             this.textBoxDatabase.Name = "textBoxDatabase";
             this.textBoxDatabase.ReadOnly = true;
-            this.textBoxDatabase.Size = new System.Drawing.Size(449, 22);
-            this.textBoxDatabase.TabIndex = 21;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 14);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 17);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Database:";
             // 
             // BackupForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(662, 326);
             this.Controls.Add(this.panelBackupContent);
             this.Controls.Add(this.statusStripProcessStats);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "BackupForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Back Up Database - ";
             this.Load += new System.EventHandler(this.BackupForm_Load);
             this.statusStripProcessStats.ResumeLayout(false);
             this.statusStripProcessStats.PerformLayout();

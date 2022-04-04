@@ -117,95 +117,44 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="menuStrip1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10.2pt</value>
+  <data name="dataGridViewBackupHistory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 23</value>
   </data>
-  <data name="connectToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAlBJREFUSEu1
-        Vk1PE1EUbeJPcGH0F+iP0A2KK+NHW7BA60ciqUt/ghCqRCwDAzOtlIWCGzYaXUmiJloBQ1uHTmeYJtid
-        WBck4qIdDe3zneaOTMrMdBLbk9y0byb3nJn77rlvAr1Af2LtNP3tPoJCfmQoXaoGRUWkS91DeKYQvbtc
-        +S7nGmw4rVXPT66foVv+0Zf4fDwsKq9jC3p5JK1poVllKryycsxOjl+sKcU/Lk7kTg5KRX36U52lOBFi
-        fPWneVUo5LtDLqvazJr5j9yKx9kaA3n8eaUaEgoxSvGHy8n82YisFq/Lqnl/de8IuRUQwZugXJTaGZeE
-        /L1bi8Y3efOASTxGn+2wxNt9RwEEyhUUvzyidG9cSeb6b2S267GM3pzb+NMi8CMSXdBLROGNSKpUTm02
-        2NSHGuNCDUtEzh2w+NJXV5GbmW2DKNyBDUXN8cRI8isyna2zgXnlBdE4o29i4wRacfzNXqscfkXQXciD
-        T4jqKHBzUFJ1qxUfvv/FRpcORZIfa4wbrCGu/26tcf3O0x02xh8mIhWNC5PZU0TljIH5rVd2E7mJ8I1s
-        2kUicslEWYnGHbwEZTu5FV4iaGH4hCi8EX2iae3kVjiLaM3bi8buNaFwjii8EeImgVnaya148G7/cON5
-        C8MnMCOldwZsDrvD9k4CiDE+LnhJzCFJNWBGSvUHHBbx5couBpeTSKsVZdXwtaHtaJ/neBN7udBd6POu
-        kGONcmFwYbbEuP3Dc1svPU3kBhxrON7+67DohJCozA6n1B89IbfQm0+NQOAvKmcFRbpn7SoAAAAASUVO
-        RK5CYII=
-</value>
+  <data name="descriptionDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Description</value>
   </data>
-  <data name="connectToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 28</value>
+  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
+    <value>English</value>
   </data>
-  <data name="connectToolStripMenuItem.Text" xml:space="preserve">
-    <value>Connect</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="newBackupDeviceToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;backupToolStripMenuItem.Name" xml:space="preserve">
+    <value>backupToolStripMenuItem</value>
+  </data>
+  <data name="backupToolStripMenuItem.Text" xml:space="preserve">
+    <value>Backup</value>
+  </data>
+  <data name="groupBoxExplorer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt</value>
+  </data>
+  <data name="&gt;&gt;appData.Name" xml:space="preserve">
+    <value>appData</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewBackupHistory.Name" xml:space="preserve">
+    <value>dataGridViewBackupHistory</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="disconnectToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+  <data name="groupBoxBackupHistory.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="disconnectToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAyxJREFUSEut
-        VllPE1EUrvpqTHwymhgJUaIPxn9gTKQLNQEaWmpa1sID4osGYxQT0wdKoUBXumEoPEAiuLygJm4xBGin
-        G7S0RQak0bDYolgiqwoZ5wx3oC1QRvBLTnJ7c8739Z7l3mEdBHI5cZhb57zEqRu4fEX+4SjaZnFq7efR
-        cv/gKjwnRUY/VvV0aq66J7pc2DIyLtQOiUS6wUKpNRQRGnx65PrvAHKxKTCis68SFs/6pt3oCH+t6AhH
-        zOQaRDLrHRdQCDNAGvgKjC22BELJ5LQBeUVnOCLUDhahMGbI03q5BdZQ+PaTyXWZDSeMzj87CoDBSSBd
-        KHRv5Ko9HFkbPm1xbxCoeheI8vaxlCJQk/jCp0SuxpEmsYbwZuz3JkFj7yJR1o4T8Xvxdr8nsgTdhSj2
-        Rp7GnS61BBeYilQ9m/rOr7NfROF7gCAOFVt8XY9ds8vlttG1vUSgAfKNPgfEIYZEwACh5Sb5y0BsqbVv
-        Zk5qGdKkSheQi82BUWhlxJCIbJ2Xl6PxjnNqXKfhd5YcO1bS4vdr3nyJFVoGH1I+avtZiTX4qdm5JQKF
-        L2vDieumIM6u7z8FftuQqXSnl9rwSb3jF+k4jNMi15R9x4U6VynlhCAxehtkto9r8SK3yBbmNjgykct2
-        ZDd679a8jVHOhiSReBSZffesvdPfujyzq1JrYJESIVu44FFoYtfWvKrATuQb/XgJOUQGlF9KxBJMEIGT
-        aF5/jr0K/VgpMg89FzQ5MyTWwHhZ+9iMwOjlIbdEALnYNEzdLer+ZUJmG6XIQUSPbYjwlI408IV0QU2A
-        nG4GqIlA62bDehtE3d1HyH/ujb9bdhQxB8ZoESh8QqelAk+F8R/0RFdocqYijEG25E3F+/kEctr+iwi/
-        1pkBt18yOW1NlMjWpEIL55JzwjhFAKHeryHT9DOZnDYQIeeDgBYubsUnYRhRKDMIyMeBPEV0J3KwjbvF
-        j+eoXHf4jQNnUBgzwLMGzxu8RJWdE9HkkwA5OXAju94tTAAPNIjAg51n8KkryZoo3s0T1S8iK/mmYc+B
-        yGnEf2qwVdi5HK2nMkuJcWBO0PY+wGL9BSx6Wko+2hRhAAAAAElFTkSuQmCC
-</value>
+  <data name="&gt;&gt;groupBoxExplorer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="disconnectToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 28</value>
-  </data>
-  <data name="disconnectToolStripMenuItem.Text" xml:space="preserve">
-    <value>Disconnect</value>
-  </data>
-  <data name="refreshToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="refreshToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAA2JJREFUSEut
-        VttLk2Ec/gqCioguuujwR0R01UVhF6VFRVoGunlWUstoFxWUF4tKp5Qn3OYx81AoGkEaSrotIQ+b3065
-        OTdjm6kXmtactHlqX++zvcNNc63RAy+M9/e8z/vb7/0dPiYcXHwyePScaOD0lbKRjKsV6qyYgoGT1BQ5
-        LgnZvfwqnSjnpUEj6rLOtI7MLn8wObhe0yJ3o/7zKKVFBr5Em5nXaLTILc51m8PDbV63m40spTIp1bry
-        zFp9b+C6Xs5WnKhmd1HKBoRCbmeSVFtT2z+94Bd7P/pj5UGHxZbbaBjOqtfL0mv0HxMkmg56hMFlfq5l
-        fp2702KcvFwxcpyag5FUpa15p//uAlk56fp1q9FoThSrBVFCxT5K2YLAC8g/9vAkmlZqCgbC4ve8Z8zh
-        Tq3W94US9gMXwPP+iSUPzoplU/N8sSaBmn3AgyLmXs/tLg8JgxzhouaQyGkw6ASvxmx8qWaInXJ7rEQj
-        r8loJs7tphTiPckW/4MiLOF47kdcGTuEmEeVKg7kNfuc7DM5V3mVukeUQrwgqQgDHhQxp9th4dIz9iD9
-        ScKsud9jdKxCC5rezbNFn46Iumwz2ES2/Iv3m4GzD9vNdmgVdNqmLxSrDjExhUNRbao5NzaRipQbMYjn
-        Smi1sXPL0GbiSfmjQrGZWafvo7yIkVGnl0MLmtfKVWlBF6TX6mWUFzFQjNAiqc7FlapTmeii4TPt6m/L
-        2MxuMCgpL2LkNPpC1KqadaFBMtFP2cOFndb/8sjnhcP78zs2PTKQS9O02+hYQap5NwkCUzAcJFRq73Yb
-        fGma/WJUTbcZhvSPx33ji2swoFhQNCgeFBGl/BXwPq/JMAENaEGTmhgmvmRwD4RR5ih3nkSrFLQY7WgD
-        lBISaCukbctHvrq8/YhExAxNavYhsVKTJFFMzYPQ/2XJgwYW2Pe3AzxPqdEpesed3lqSKqbn+VWaZGoO
-        Bk+sbZObnV4vsEJdAGGeWH0PYfF7/la38DNZopVQSjBinyuPCVrGrPD8TxdgyGDYZJFCQrXmv5mw+x8U
-        C/8+qUonZThuBz2yAYw3jLnNow/jkFKCBkvgkpkW126SDrxtWMIFBj0GPqr+tWrWjTxHKiJbtjxoJMCn
-        Cj5ZYktUadHFylMoUGoKAYb5Da9q3xpT7K2wAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="refreshToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 28</value>
-  </data>
-  <data name="refreshToolStripMenuItem.Text" xml:space="preserve">
-    <value>Refresh</value>
-  </data>
-  <data name="backupToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="backupToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -229,178 +178,48 @@
         QmCC
 </value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="backupToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
+  <data name="&gt;&gt;imageListExplorer.Name" xml:space="preserve">
+    <value>imageListExplorer</value>
   </data>
-  <data name="backupToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 28</value>
+  <data name="&gt;&gt;dataGridViewBackupHistory.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="backupToolStripMenuItem.Text" xml:space="preserve">
-    <value>Backup</value>
+  <data name="&gt;&gt;appData.Type" xml:space="preserve">
+    <value>DatabaseBackupManager.AppData, AppData.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="restoreToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;backupHistoryBindingSource.Name" xml:space="preserve">
+    <value>backupHistoryBindingSource</value>
   </data>
-  <data name="restoreToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAA0hJREFUSEud
-        ldtPE1EQxkl88B/w3TcfffDJ6LNRiIAXQBQTL4BCUEOQGANoEIVwawu0RYigRZBg5W4gIkjUWiy9sQWh
-        pVfaAkVCC5RyKy3jznZBoFto+ZJfcnJ25pvszO45YQcpolR8PLxIcvpCgSQinqe4h+Aa9/AZHRa8wiu6
-        j958rUxNqhnuy/igVnO+mmfqxDZnG2H39mkWAcH1+4GZRU6PeQZjMPYGT5mKubQNsxK4srOpguHxrmGH
-        W+/wgmlhMygwtkU5506qURli+ENnaDt/3X83Yg7FeC+Ym/J2ZIK289etamJz2LbOmBwMxNQ63K4mvLSd
-        v+K5CldeuwH4/VYYMC4zmuzFSIKxZb0WeNaqg8eNaitt56/rfMUSJg2YluHNzyl42WGAPJKCz0YoJw1q
-        RdMUaIZ7+AxjMBZzMPepUBO4RVsF9oK9VU2vUyYIrgPN6lAFQmHfAtHsQTf2lCkxGDA3oVLhpO38FVMu
-        W3nVaQC5dZXRYD9kZA7m7lsAW4T9xYE+b9EBp8cCnSoHiAwuGJpaA63dQ4Fr3OtU2ckYMxXL+2YF9awH
-        W+Sm7fy1dwaKyVXyWJgDgdgGlaRBUZeJAte4107YQUnGYKxx3hePa8qMSXFc+fLOAqFQ2mOFlLoxGJ11
-        By4QWSrZOMyQm5VzkNUxBZxfK5DZpIVYofAIbblbOOSS7gnQznkYjZjA/yL9oxGq5F6K/N55iOUS1bTl
-        buEMfuiXqF+e12cBsdFF9ZbJGBn964aH9ePAH9zYLoBkfLLar3CVibTtf+0csmTCd1zg2YRfSXazFnLb
-        9JBPHhEa8g2x8BOhFliilV3mWyQKdJaoEslJ2tqnUP7k/nEn5LTqIbtFDzcqiW3jR416iOOrepFotvIF
-        be3TtQq5k8nsILDQVoH0Jn3gr+gSW2pqVzm8TCb7sbNAWoPOQ9v5KzJXfiyaJdOnCUZcwd4HyM4Cd2s1
-        ge+DLV0sEseQb6O5Wi5buFNNLOU0a9cqyOODvOihgaTq+yQUdxvdrC9mEBldaw/qx1yF/U5AEqr+2Gib
-        4HSZRZw4XyBOjiiVlkWxpA2RbGl9RLG0LLzwd3JW/dgpKqZs6FxMhSoLieYMZVKJlMLC/gHhIJKA/8SH
-        jgAAAABJRU5ErkJggg==
-</value>
+  <data name="propertiesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Properties</value>
   </data>
-  <data name="restoreToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
+  <data name="groupBoxExplorer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
   </data>
-  <data name="restoreToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 28</value>
-  </data>
-  <data name="restoreToolStripMenuItem.Text" xml:space="preserve">
-    <value>Restore</value>
-  </data>
-  <data name="newBackupDeviceToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="newBackupDeviceToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAATNJREFUSEtj
-        GAUDDwInnL0YPePyWVpgkNkMCfOuP5xx5u9/WmCQ2cPEgr4j3/7nL7/7vwALbtv74f/GG3//X3v9DwWD
-        xEBy2PSAzAKZCbegY9+n//OOvPi/58bH/x6dx/+7dyBw2sLb/w8++PcfHYDEQHLIakF6d13/ADYLZCaG
-        BenzLsMVB/af/u/dfZKgBSA1ILUwfRnzL+O2AKQYpvDsk+//Zx58StACkBqQWpg+n56TuC0In3wWrrBp
-        w93/aUAfEbIApKZx/R24vogpZ3FbMGXPI7hCGAYZcvrpv/9PP6NikBhIDl39tL2PsVuQOvfK/6o1d4Dx
-        cAXoKgiOn3Xpf+Hqx//PPvv3//4HVAwSA8mB1MDUg/SCzACZhWIBtjRMDTxqAUEMtoDmxfUoGGDAwAAA
-        pOW2HiKMLIYAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="newBackupDeviceToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="newBackupDeviceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>197, 28</value>
-  </data>
-  <data name="newBackupDeviceToolStripMenuItem.Text" xml:space="preserve">
-    <value>New Backup Device</value>
-  </data>
-  <data name="languageToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAABNBJREFUSEud
-        VVlPW0cUtvrSPvaplfrQh/a9ah/6C6qq6g/oQ0PbsDUpiyISCMFJIGYPlAgIpGAWE4OdsJrYQGL2NYtS
-        Khbvvr6+DpttdmwStcH215nxvcRumgjlSJ/mzp0535k528hOIlUPVr6+eNdWmthqtiW1WJzyPkFbN+r/
-        Tlx+N6nRuz++0ssZszT2vZTmRVy4Y8PPSjN+bDDhdIsVP9QvIlVlD9M9DcO+j0S1k0mR3qUs0LletM1t
-        4PqQAG4nhMJ+FxY3XqL20d842+HCH0+PkNXpRttDL/L7uBdFer5BVH+ztAnCBxe7Of7GxCbqHwYIgQCj
-        KwLbVggKYsC1F0HjfBhn1Bwa/jzCvDfMDjDDB6F+vInsLl64z3Hvi3SvS3aX21s6to+G+RBS1E70WMKM
-        sOnxATRPfFjyRw3I9V70LR1A2I+w213p4dC6EALVJRzrIl28XDOsjv+ktLDrJzSakdluRbGex7V+Hr+1
-        mXGpy8G+M7UuEg87MtVmtk6RqrIhgcSH6ZJRMbhqFGmjUj3m/yxN44rQ01FkaDh2On43gkerYZQMCHBu
-        h9g/N3GTk5z69/seNqeYeRZ1m6R/toOLKMf9n4v0Mllur8deORVki1Uzh7iqX8MycYfWFFUgxmHfjpJJ
-        KDG42egmGOIiON+7SnSfs/0Vk0Hk9Qo2kV4mS9dwIcl6nt6H8okD9i2BXn3aE44zQINLyfWOaFzKiP/l
-        Bv+xTrqWO2Lk1cOb36e0OXDpno8hgcQht997PM8jON1sJunoQ/ujVzivsaJhOrqHgurQGErzFJUDNVP+
-        b2VlRm99jm4d1ycCDElkgY5VUwF0LgTwwBokAbZjigvGgWZOBdkj6cXqUuT0raF8eKNWVmBYGSkZ3Ytx
-        B89GmuOSO2imxLqHIl8X3RcLSZeiZGwPCv2KUVZo8NwpJRP6c9AZQW4PD9VCGDzJFons/wxkdb7dQPHo
-        PgoMayOyiiHhXKVxjV1Lbw6wfO9eDMS5478uGrAEkdRqP3aHhFgXZRMXlY3462U3Rz1fyQlp3YQPVwd8
-        OKOyQDXrjQtoBimq2HnFsA+nSDFKAZWCTBNEmicTY7Uz29+wTMrrsm/Ra9Miqpv04dZcAN3WCHoIJoQw
-        SCOLc8/8BqkNUtGx7qFt4nJMmqZ1OKNpSoV0Q/2EI8CUn3ieI1e3Fqcs73XFGaCgcaEHeroehvKvMCu0
-        G2KhlY7vI0/nMYn0pBYmhQ/l3Y5DSZlYjzOQrnWjY+nouNjspG3Etop+WwS/tr9qFalqR0Q5uvupSB8V
-        8qCo09pM7GTJLWb80mxlFUxxqtGERJUdGcQtdD23M77ZpbVbjpsdfZCyu7j4ZifJ5R7HjGFpB6bNMFJu
-        O9mjQk9E2wBtITSN6YnV5JGZdEZdytp1Lwcl2acw7iCn2+0R6V4XBfAeNaKa80ZooKlrqIFbxFCGloNN
-        bHgKnYsR0+/yQQGz/CHyB9ZJDQk85RDp3iylendlpsZxlEOCnaZxQ7N8hMJ7PEy+l1j2/sPcQtt32YAb
-        zdProPErNjy7KaqfTFrntj6R64SFFJU1lKikj74VabfNDBe0ViQ3LeGcxrJb0OfS0SQR1d5NqkfWvsy5
-        ay9KbFqcS2panM3tcihqxla/EJffIjLZvxFRnMAXy/SmAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="languageToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 28</value>
-  </data>
-  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
-    <value>English</value>
-  </data>
-  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="&gt;&gt;dataGridViewBackupHistory.Parent" xml:space="preserve">
+    <value>groupBoxBackupHistory</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>945, 32</value>
   </data>
-  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+  <data name="groupBoxBackupHistory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>690, 506</value>
+  </data>
+  <data name="&gt;&gt;groupBoxExplorer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="languageToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="treeViewExplorer.ImageIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 28</value>
-  </data>
-  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
-    <value>English</value>
-  </data>
-  <data name="tiengVietToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 28</value>
-  </data>
-  <data name="tiengVietToolStripMenuItem.Text" xml:space="preserve">
-    <value>Tiếng Việt</value>
-  </data>
-  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>152, 17</value>
-  </metadata>
-  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 538</value>
-  </data>
-  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>945, 22</value>
-  </data>
-  <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="statusStrip1.Text" xml:space="preserve">
-    <value>statusStrip1</value>
-  </data>
-  <data name="&gt;&gt;statusStrip1.Name" xml:space="preserve">
-    <value>statusStrip1</value>
-  </data>
-  <data name="&gt;&gt;statusStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;statusStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <metadata name="imageListExplorer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>798, 17</value>
-  </metadata>
   <data name="imageListExplorer.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADu
-        CQAAAk1TRnQBSQFMAgEBBAEAAbgBAAG4AQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADw
+        CQAAAk1TRnQBSQFMAgEBBAEAAcwBAAHYAQABEAEAARABAAT/AQkBEAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAASADAAEBAQABCAYAAQgYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -442,62 +261,470 @@
         ASADAAEBAQABAQYAAQEWAAP/gQAB8AEBAv8B8AEPAv8BwAMAAcABAwL/AcADAAHAAQMC/wHAAwABwAED
         Av8BwAMAAcABAwHAAQMBwAMAAcABAwGAAQEBwAEBAgABwAEDAgABwAEDAgABwAEDAgABwAEDAgABwAED
         AgABwAEDAgABwAEDAgABwAEDAgABwAEDAgABwAEDAgABwAEDAv8BwAEDAgABwAEDAv8BwAEDAgABwAED
-        Av8BwAIDAf8BwAEDAv8B8AEPAv8B8AEPAv8L
+        Av8BwAIDAf8BwAEDAv8B8AEPAv8B8AEPAv8WAAs=
 </value>
   </data>
-  <data name="&gt;&gt;treeViewExplorer.Name" xml:space="preserve">
-    <value>treeViewExplorer</value>
+  <data name="usernameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>User Name</value>
   </data>
-  <data name="&gt;&gt;treeViewExplorer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;treeViewExplorer.Parent" xml:space="preserve">
-    <value>groupBoxExplorer</value>
-  </data>
-  <data name="&gt;&gt;treeViewExplorer.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="groupBoxExplorer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="groupBoxExplorer.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="groupBoxExplorer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.2pt</value>
-  </data>
-  <data name="groupBoxExplorer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 32</value>
-  </data>
-  <data name="groupBoxExplorer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 506</value>
+  <data name="&gt;&gt;backupDevicesBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="groupBoxExplorer.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
+  <data name="&gt;&gt;newBackupDeviceToolStripMenuItem.Name" xml:space="preserve">
+    <value>newBackupDeviceToolStripMenuItem</value>
+  </data>
+  <data name="refreshToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAA2JJREFUSEut
+        VttLk2Ec/gqCioguuujwR0R01UVhF6VFRVoGunlWUstoFxWUF4tKp5Qn3OYx81AoGkEaSrotIQ+b3065
+        OTdjm6kXmtactHlqX++zvcNNc63RAy+M9/e8z/vb7/0dPiYcXHwyePScaOD0lbKRjKsV6qyYgoGT1BQ5
+        LgnZvfwqnSjnpUEj6rLOtI7MLn8wObhe0yJ3o/7zKKVFBr5Em5nXaLTILc51m8PDbV63m40spTIp1bry
+        zFp9b+C6Xs5WnKhmd1HKBoRCbmeSVFtT2z+94Bd7P/pj5UGHxZbbaBjOqtfL0mv0HxMkmg56hMFlfq5l
+        fp2702KcvFwxcpyag5FUpa15p//uAlk56fp1q9FoThSrBVFCxT5K2YLAC8g/9vAkmlZqCgbC4ve8Z8zh
+        Tq3W94US9gMXwPP+iSUPzoplU/N8sSaBmn3AgyLmXs/tLg8JgxzhouaQyGkw6ASvxmx8qWaInXJ7rEQj
+        r8loJs7tphTiPckW/4MiLOF47kdcGTuEmEeVKg7kNfuc7DM5V3mVukeUQrwgqQgDHhQxp9th4dIz9iD9
+        ScKsud9jdKxCC5rezbNFn46Iumwz2ES2/Iv3m4GzD9vNdmgVdNqmLxSrDjExhUNRbao5NzaRipQbMYjn
+        Smi1sXPL0GbiSfmjQrGZWafvo7yIkVGnl0MLmtfKVWlBF6TX6mWUFzFQjNAiqc7FlapTmeii4TPt6m/L
+        2MxuMCgpL2LkNPpC1KqadaFBMtFP2cOFndb/8sjnhcP78zs2PTKQS9O02+hYQap5NwkCUzAcJFRq73Yb
+        fGma/WJUTbcZhvSPx33ji2swoFhQNCgeFBGl/BXwPq/JMAENaEGTmhgmvmRwD4RR5ih3nkSrFLQY7WgD
+        lBISaCukbctHvrq8/YhExAxNavYhsVKTJFFMzYPQ/2XJgwYW2Pe3AzxPqdEpesed3lqSKqbn+VWaZGoO
+        Bk+sbZObnV4vsEJdAGGeWH0PYfF7/la38DNZopVQSjBinyuPCVrGrPD8TxdgyGDYZJFCQrXmv5mw+x8U
+        C/8+qUonZThuBz2yAYw3jLnNow/jkFKCBkvgkpkW126SDrxtWMIFBj0GPqr+tWrWjTxHKiJbtjxoJMCn
+        Cj5ZYktUadHFylMoUGoKAYb5Da9q3xpT7K2wAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="refreshToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 28</value>
+  </data>
+  <data name="groupBoxExplorer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 506</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;refreshToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;treeViewExplorer.Parent" xml:space="preserve">
+    <value>groupBoxExplorer</value>
+  </data>
+  <data name="&gt;&gt;languageToolStripMenuItem.Name" xml:space="preserve">
+    <value>languageToolStripMenuItem</value>
+  </data>
   <data name="groupBoxExplorer.Text" xml:space="preserve">
     <value>Explorer</value>
   </data>
-  <data name="&gt;&gt;groupBoxExplorer.Name" xml:space="preserve">
-    <value>groupBoxExplorer</value>
+  <data name="treeViewExplorer.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;groupBoxExplorer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="groupBoxBackupHistory.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt</value>
   </data>
-  <data name="&gt;&gt;groupBoxExplorer.Parent" xml:space="preserve">
+  <data name="tiengVietToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 28</value>
+  </data>
+  <data name="Column1.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="groupBoxExplorer.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;refreshToolStripMenuItem.Name" xml:space="preserve">
+    <value>refreshToolStripMenuItem</value>
+  </data>
+  <data name="groupBoxBackupHistory.Text" xml:space="preserve">
+    <value>Backup History</value>
+  </data>
+  <data name="&gt;&gt;imageListExplorer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="descriptionDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 28</value>
+  </data>
+  <data name="&gt;&gt;tiengVietToolStripMenuItem.Name" xml:space="preserve">
+    <value>tiengVietToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewBackupHistory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;disconnectToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;englishToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;groupBoxExplorer.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="treeViewExplorer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="restoreToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAA0hJREFUSEud
+        ldtPE1EQxkl88B/w3TcfffDJ6LNRiIAXQBQTL4BCUEOQGANoEIVwawu0RYigRZBg5W4gIkjUWiy9sQWh
+        pVfaAkVCC5RyKy3jznZBoFto+ZJfcnJ25pvszO45YQcpolR8PLxIcvpCgSQinqe4h+Aa9/AZHRa8wiu6
+        j958rUxNqhnuy/igVnO+mmfqxDZnG2H39mkWAcH1+4GZRU6PeQZjMPYGT5mKubQNsxK4srOpguHxrmGH
+        W+/wgmlhMygwtkU5506qURli+ENnaDt/3X83Yg7FeC+Ym/J2ZIK289etamJz2LbOmBwMxNQ63K4mvLSd
+        v+K5CldeuwH4/VYYMC4zmuzFSIKxZb0WeNaqg8eNaitt56/rfMUSJg2YluHNzyl42WGAPJKCz0YoJw1q
+        RdMUaIZ7+AxjMBZzMPepUBO4RVsF9oK9VU2vUyYIrgPN6lAFQmHfAtHsQTf2lCkxGDA3oVLhpO38FVMu
+        W3nVaQC5dZXRYD9kZA7m7lsAW4T9xYE+b9EBp8cCnSoHiAwuGJpaA63dQ4Fr3OtU2ckYMxXL+2YF9awH
+        W+Sm7fy1dwaKyVXyWJgDgdgGlaRBUZeJAte4107YQUnGYKxx3hePa8qMSXFc+fLOAqFQ2mOFlLoxGJ11
+        By4QWSrZOMyQm5VzkNUxBZxfK5DZpIVYofAIbblbOOSS7gnQznkYjZjA/yL9oxGq5F6K/N55iOUS1bTl
+        buEMfuiXqF+e12cBsdFF9ZbJGBn964aH9ePAH9zYLoBkfLLar3CVibTtf+0csmTCd1zg2YRfSXazFnLb
+        9JBPHhEa8g2x8BOhFliilV3mWyQKdJaoEslJ2tqnUP7k/nEn5LTqIbtFDzcqiW3jR416iOOrepFotvIF
+        be3TtQq5k8nsILDQVoH0Jn3gr+gSW2pqVzm8TCb7sbNAWoPOQ9v5KzJXfiyaJdOnCUZcwd4HyM4Cd2s1
+        ge+DLV0sEseQb6O5Wi5buFNNLOU0a9cqyOODvOihgaTq+yQUdxvdrC9mEBldaw/qx1yF/U5AEqr+2Gib
+        4HSZRZw4XyBOjiiVlkWxpA2RbGl9RLG0LLzwd3JW/dgpKqZs6FxMhSoLieYMZVKJlMLC/gHhIJKA/8SH
+        jgAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="treeViewExplorer.ImageIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;treeViewExplorer.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="contextMenuStripBackupDevices.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 52</value>
+  </data>
+  <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="treeViewExplorer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 480</value>
+  </data>
+  <data name="&gt;&gt;backupHistoryTableAdapter.Name" xml:space="preserve">
+    <value>backupHistoryTableAdapter</value>
+  </data>
+  <data name="languageToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAABNBJREFUSEud
+        VVlPW0cUtvrSPvaplfrQh/a9ah/6C6qq6g/oQ0PbsDUpiyISCMFJIGYPlAgIpGAWE4OdsJrYQGL2NYtS
+        Khbvvr6+DpttdmwStcH215nxvcRumgjlSJ/mzp0535k528hOIlUPVr6+eNdWmthqtiW1WJzyPkFbN+r/
+        Tlx+N6nRuz++0ssZszT2vZTmRVy4Y8PPSjN+bDDhdIsVP9QvIlVlD9M9DcO+j0S1k0mR3qUs0LletM1t
+        4PqQAG4nhMJ+FxY3XqL20d842+HCH0+PkNXpRttDL/L7uBdFer5BVH+ztAnCBxe7Of7GxCbqHwYIgQCj
+        KwLbVggKYsC1F0HjfBhn1Bwa/jzCvDfMDjDDB6F+vInsLl64z3Hvi3SvS3aX21s6to+G+RBS1E70WMKM
+        sOnxATRPfFjyRw3I9V70LR1A2I+w213p4dC6EALVJRzrIl28XDOsjv+ktLDrJzSakdluRbGex7V+Hr+1
+        mXGpy8G+M7UuEg87MtVmtk6RqrIhgcSH6ZJRMbhqFGmjUj3m/yxN44rQ01FkaDh2On43gkerYZQMCHBu
+        h9g/N3GTk5z69/seNqeYeRZ1m6R/toOLKMf9n4v0Mllur8deORVki1Uzh7iqX8MycYfWFFUgxmHfjpJJ
+        KDG42egmGOIiON+7SnSfs/0Vk0Hk9Qo2kV4mS9dwIcl6nt6H8okD9i2BXn3aE44zQINLyfWOaFzKiP/l
+        Bv+xTrqWO2Lk1cOb36e0OXDpno8hgcQht997PM8jON1sJunoQ/ujVzivsaJhOrqHgurQGErzFJUDNVP+
+        b2VlRm99jm4d1ycCDElkgY5VUwF0LgTwwBokAbZjigvGgWZOBdkj6cXqUuT0raF8eKNWVmBYGSkZ3Ytx
+        B89GmuOSO2imxLqHIl8X3RcLSZeiZGwPCv2KUVZo8NwpJRP6c9AZQW4PD9VCGDzJFons/wxkdb7dQPHo
+        PgoMayOyiiHhXKVxjV1Lbw6wfO9eDMS5478uGrAEkdRqP3aHhFgXZRMXlY3462U3Rz1fyQlp3YQPVwd8
+        OKOyQDXrjQtoBimq2HnFsA+nSDFKAZWCTBNEmicTY7Uz29+wTMrrsm/Ra9Miqpv04dZcAN3WCHoIJoQw
+        SCOLc8/8BqkNUtGx7qFt4nJMmqZ1OKNpSoV0Q/2EI8CUn3ieI1e3Fqcs73XFGaCgcaEHeroehvKvMCu0
+        G2KhlY7vI0/nMYn0pBYmhQ/l3Y5DSZlYjzOQrnWjY+nouNjspG3Etop+WwS/tr9qFalqR0Q5uvupSB8V
+        8qCo09pM7GTJLWb80mxlFUxxqtGERJUdGcQtdD23M77ZpbVbjpsdfZCyu7j4ZifJ5R7HjGFpB6bNMFJu
+        O9mjQk9E2wBtITSN6YnV5JGZdEZdytp1Lwcl2acw7iCn2+0R6V4XBfAeNaKa80ZooKlrqIFbxFCGloNN
+        bHgKnYsR0+/yQQGz/CHyB9ZJDQk85RDp3iylendlpsZxlEOCnaZxQ7N8hMJ7PEy+l1j2/sPcQtt32YAb
+        zdProPErNjy7KaqfTFrntj6R64SFFJU1lKikj74VabfNDBe0ViQ3LeGcxrJb0OfS0SQR1d5NqkfWvsy5
+        ay9KbFqcS2panM3tcihqxla/EJffIjLZvxFRnMAXy/SmAAAAAElFTkSuQmCC
+</value>
   </data>
   <data name="treeViewExplorer.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 23</value>
+  </data>
+  <data name="propertiesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 24</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="disconnectToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAyxJREFUSEut
+        VllPE1EUrvpqTHwymhgJUaIPxn9gTKQLNQEaWmpa1sID4osGYxQT0wdKoUBXumEoPEAiuLygJm4xBGin
+        G7S0RQak0bDYolgiqwoZ5wx3oC1QRvBLTnJ7c8739Z7l3mEdBHI5cZhb57zEqRu4fEX+4SjaZnFq7efR
+        cv/gKjwnRUY/VvV0aq66J7pc2DIyLtQOiUS6wUKpNRQRGnx65PrvAHKxKTCis68SFs/6pt3oCH+t6AhH
+        zOQaRDLrHRdQCDNAGvgKjC22BELJ5LQBeUVnOCLUDhahMGbI03q5BdZQ+PaTyXWZDSeMzj87CoDBSSBd
+        KHRv5Ko9HFkbPm1xbxCoeheI8vaxlCJQk/jCp0SuxpEmsYbwZuz3JkFj7yJR1o4T8Xvxdr8nsgTdhSj2
+        Rp7GnS61BBeYilQ9m/rOr7NfROF7gCAOFVt8XY9ds8vlttG1vUSgAfKNPgfEIYZEwACh5Sb5y0BsqbVv
+        Zk5qGdKkSheQi82BUWhlxJCIbJ2Xl6PxjnNqXKfhd5YcO1bS4vdr3nyJFVoGH1I+avtZiTX4qdm5JQKF
+        L2vDieumIM6u7z8FftuQqXSnl9rwSb3jF+k4jNMi15R9x4U6VynlhCAxehtkto9r8SK3yBbmNjgykct2
+        ZDd679a8jVHOhiSReBSZffesvdPfujyzq1JrYJESIVu44FFoYtfWvKrATuQb/XgJOUQGlF9KxBJMEIGT
+        aF5/jr0K/VgpMg89FzQ5MyTWwHhZ+9iMwOjlIbdEALnYNEzdLer+ZUJmG6XIQUSPbYjwlI408IV0QU2A
+        nG4GqIlA62bDehtE3d1HyH/ujb9bdhQxB8ZoESh8QqelAk+F8R/0RFdocqYijEG25E3F+/kEctr+iwi/
+        1pkBt18yOW1NlMjWpEIL55JzwjhFAKHeryHT9DOZnDYQIeeDgBYubsUnYRhRKDMIyMeBPEV0J3KwjbvF
+        j+eoXHf4jQNnUBgzwLMGzxu8RJWdE9HkkwA5OXAju94tTAAPNIjAg51n8KkryZoo3s0T1S8iK/mmYc+B
+        yGnEf2qwVdi5HK2nMkuJcWBO0PY+wGL9BSx6Wko+2hRhAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="statusStrip1.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;position.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="connectToolStripMenuItem.Text" xml:space="preserve">
+    <value>Connect</value>
+  </data>
+  <data name="groupBoxExplorer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 32</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;englishToolStripMenuItem.Name" xml:space="preserve">
+    <value>englishToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;backupHistoryTableAdapter.Type" xml:space="preserve">
+    <value>DatabaseBackupManager.AppDataTableAdapters.BackupHistoryTableAdapter, AppData.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;propertiesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="connectToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 28</value>
+  </data>
+  <data name="restoreToolStripMenuItem.Text" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="&gt;&gt;deleteToolStripMenuItem.Name" xml:space="preserve">
+    <value>deleteToolStripMenuItem</value>
+  </data>
+  <data name="usernameDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="treeViewExplorer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;Column1.Name" xml:space="preserve">
+    <value>Column1</value>
+  </data>
+  <data name="&gt;&gt;connectToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 28</value>
+  </data>
+  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 538</value>
+  </data>
+  <data name="&gt;&gt;propertiesToolStripMenuItem.Name" xml:space="preserve">
+    <value>propertiesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;userDatabasesTableAdapter.Type" xml:space="preserve">
+    <value>DatabaseBackupManager.AppDataTableAdapters.userDatabasesTableAdapter, AppData.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="treeViewExplorer.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="backupfinishdateDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Backup Finish Date</value>
+  </data>
+  <data name="dataGridViewBackupHistory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>684, 480</value>
+  </data>
+  <data name="groupBoxBackupHistory.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="disconnectToolStripMenuItem.Text" xml:space="preserve">
+    <value>Disconnect</value>
+  </data>
+  <data name="&gt;&gt;groupBoxExplorer.Name" xml:space="preserve">
+    <value>groupBoxExplorer</value>
+  </data>
+  <data name="menuStrip1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBoxBackupHistory.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="restoreToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;groupBoxBackupHistory.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBoxBackupHistory.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;descriptionDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>descriptionDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;treeViewExplorer.Name" xml:space="preserve">
+    <value>treeViewExplorer</value>
+  </data>
+  <data name="&gt;&gt;newBackupDeviceToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="newBackupDeviceToolStripMenuItem.Text" xml:space="preserve">
+    <value>New Backup Device</value>
+  </data>
+  <data name="dataGridViewBackupHistory.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="deleteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 24</value>
+  </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;backupToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Database Backup &amp; Restore Manager for Microsoft SQL Server</value>
+  </data>
+  <data name="&gt;&gt;position.Name" xml:space="preserve">
+    <value>position</value>
+  </data>
+  <data name="&gt;&gt;restoreToolStripMenuItem.Name" xml:space="preserve">
+    <value>restoreToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;backup_devicesTableAdapter.Name" xml:space="preserve">
+    <value>backup_devicesTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;backupHistoryBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="backupToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 28</value>
+  </data>
+  <data name="&gt;&gt;Column1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="newBackupDeviceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 28</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tiengVietToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="newBackupDeviceToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAATNJREFUSEtj
+        GAUDDwInnL0YPePyWVpgkNkMCfOuP5xx5u9/WmCQ2cPEgr4j3/7nL7/7vwALbtv74f/GG3//X3v9DwWD
+        xEBy2PSAzAKZCbegY9+n//OOvPi/58bH/x6dx/+7dyBw2sLb/w8++PcfHYDEQHLIakF6d13/ADYLZCaG
+        BenzLsMVB/af/u/dfZKgBSA1ILUwfRnzL+O2AKQYpvDsk+//Zx58StACkBqQWpg+n56TuC0In3wWrrBp
+        w93/aUAfEbIApKZx/R24vogpZ3FbMGXPI7hCGAYZcvrpv/9PP6NikBhIDl39tL2PsVuQOvfK/6o1d4Dx
+        cAXoKgiOn3Xpf+Hqx//PPvv3//4HVAwSA8mB1MDUg/SCzACZhWIBtjRMDTxqAUEMtoDmxfUoGGDAwAAA
+        pOW2HiKMLIYAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="dataGridViewBackupHistory.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;descriptionDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="refreshToolStripMenuItem.Text" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="&gt;&gt;usernameDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>usernameDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="restoreToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStripBackupDevices.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Column1.HeaderText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;deleteToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBoxBackupHistory.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;backupstartdateDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="disconnectToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;disconnectToolStripMenuItem.Name" xml:space="preserve">
+    <value>disconnectToolStripMenuItem</value>
+  </data>
+  <data name="newBackupDeviceToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="refreshToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="backupToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="backupstartdateDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;groupBoxBackupHistory.Name" xml:space="preserve">
+    <value>groupBoxBackupHistory</value>
+  </data>
+  <data name="backupstartdateDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Backup Start Date</value>
+  </data>
+  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>945, 22</value>
+  </data>
+  <data name="&gt;&gt;userDatabasesTableAdapter.Name" xml:space="preserve">
+    <value>userDatabasesTableAdapter</value>
+  </data>
+  <data name="tiengVietToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tiếng Việt</value>
+  </data>
+  <data name="position.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;usernameDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="deleteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="&gt;&gt;backupstartdateDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>backupstartdateDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;groupBoxBackupHistory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="groupBoxBackupHistory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>255, 32</value>
+  </data>
+  <data name="backupToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="dataGridViewBackupHistory.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;backupfinishdateDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>backupfinishdateDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>945, 560</value>
+  </data>
+  <data name="&gt;&gt;restoreToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBoxBackupHistory.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="treeViewExplorer.Nodes" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
@@ -518,361 +745,101 @@
         Y2VzCQQAAAAGDwAAABFOb2RlQmFja3VwRGV2aWNlcwD/////CQwAAAD/////CQwAAAAAAAAACw==
 </value>
   </data>
-  <data name="treeViewExplorer.SelectedImageIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="treeViewExplorer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>249, 480</value>
-  </data>
-  <data name="treeViewExplorer.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="treeViewExplorer.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;treeViewExplorer.Name" xml:space="preserve">
-    <value>treeViewExplorer</value>
-  </data>
-  <data name="&gt;&gt;treeViewExplorer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;treeViewExplorer.Parent" xml:space="preserve">
-    <value>groupBoxExplorer</value>
-  </data>
-  <data name="&gt;&gt;treeViewExplorer.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="groupBoxBackupHistory.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;dataGridViewBackupHistory.Name" xml:space="preserve">
-    <value>dataGridViewBackupHistory</value>
-  </data>
-  <data name="&gt;&gt;dataGridViewBackupHistory.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataGridViewBackupHistory.Parent" xml:space="preserve">
-    <value>groupBoxBackupHistory</value>
-  </data>
-  <data name="&gt;&gt;dataGridViewBackupHistory.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="groupBoxBackupHistory.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="groupBoxBackupHistory.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="groupBoxBackupHistory.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.2pt</value>
-  </data>
-  <data name="groupBoxBackupHistory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>255, 32</value>
-  </data>
-  <data name="groupBoxBackupHistory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>690, 506</value>
-  </data>
-  <data name="groupBoxBackupHistory.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="groupBoxBackupHistory.Text" xml:space="preserve">
-    <value>Backup History</value>
-  </data>
-  <data name="groupBoxBackupHistory.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;groupBoxBackupHistory.Name" xml:space="preserve">
-    <value>groupBoxBackupHistory</value>
-  </data>
-  <data name="&gt;&gt;groupBoxBackupHistory.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxBackupHistory.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBoxBackupHistory.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="backupHistoryBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>385, 60</value>
-  </metadata>
-  <data name="dataGridViewBackupHistory.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="dataGridViewBackupHistory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 23</value>
-  </data>
-  <data name="dataGridViewBackupHistory.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="dataGridViewBackupHistory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>684, 480</value>
-  </data>
-  <data name="dataGridViewBackupHistory.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;dataGridViewBackupHistory.Name" xml:space="preserve">
-    <value>dataGridViewBackupHistory</value>
-  </data>
-  <data name="&gt;&gt;dataGridViewBackupHistory.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataGridViewBackupHistory.Parent" xml:space="preserve">
-    <value>groupBoxBackupHistory</value>
-  </data>
-  <data name="&gt;&gt;dataGridViewBackupHistory.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;backupfinishdateDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="position.HeaderText" xml:space="preserve">
     <value>Position</value>
   </data>
-  <data name="position.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="backupstartdateDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Backup Start Date</value>
-  </data>
-  <data name="backupstartdateDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="backupfinishdateDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Backup Finish Date</value>
+  <data name="connectToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAlBJREFUSEu1
+        Vk1PE1EUbeJPcGH0F+iP0A2KK+NHW7BA60ciqUt/ghCqRCwDAzOtlIWCGzYaXUmiJloBQ1uHTmeYJtid
+        WBck4qIdDe3zneaOTMrMdBLbk9y0byb3nJn77rlvAr1Af2LtNP3tPoJCfmQoXaoGRUWkS91DeKYQvbtc
+        +S7nGmw4rVXPT66foVv+0Zf4fDwsKq9jC3p5JK1poVllKryycsxOjl+sKcU/Lk7kTg5KRX36U52lOBFi
+        fPWneVUo5LtDLqvazJr5j9yKx9kaA3n8eaUaEgoxSvGHy8n82YisFq/Lqnl/de8IuRUQwZugXJTaGZeE
+        /L1bi8Y3efOASTxGn+2wxNt9RwEEyhUUvzyidG9cSeb6b2S267GM3pzb+NMi8CMSXdBLROGNSKpUTm02
+        2NSHGuNCDUtEzh2w+NJXV5GbmW2DKNyBDUXN8cRI8isyna2zgXnlBdE4o29i4wRacfzNXqscfkXQXciD
+        T4jqKHBzUFJ1qxUfvv/FRpcORZIfa4wbrCGu/26tcf3O0x02xh8mIhWNC5PZU0TljIH5rVd2E7mJ8I1s
+        2kUicslEWYnGHbwEZTu5FV4iaGH4hCi8EX2iae3kVjiLaM3bi8buNaFwjii8EeImgVnaya148G7/cON5
+        C8MnMCOldwZsDrvD9k4CiDE+LnhJzCFJNWBGSvUHHBbx5couBpeTSKsVZdXwtaHtaJ/neBN7udBd6POu
+        kGONcmFwYbbEuP3Dc1svPU3kBhxrON7+67DohJCozA6n1B89IbfQm0+NQOAvKmcFRbpn7SoAAAAASUVO
+        RK5CYII=
+</value>
   </data>
   <data name="backupfinishdateDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="usernameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>User Name</value>
-  </data>
-  <data name="usernameDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column1.HeaderText" xml:space="preserve">
-    <value>Name</value>
-  </data>
-  <data name="Column1.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="descriptionDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Description</value>
-  </data>
-  <data name="descriptionDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <metadata name="backupHistoryBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>385, 60</value>
-  </metadata>
-  <metadata name="appData.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>271, 60</value>
-  </metadata>
-  <metadata name="appData.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>271, 60</value>
-  </metadata>
-  <metadata name="userDatabasesTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>551, 17</value>
-  </metadata>
-  <metadata name="backup_devicesTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 60</value>
-  </metadata>
-  <metadata name="backupHistoryTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>621, 60</value>
-  </metadata>
-  <metadata name="backupDevicesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>289, 17</value>
-  </metadata>
-  <metadata name="contextMenuStripBackupDevices.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>832, 60</value>
-  </metadata>
-  <data name="deleteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 24</value>
-  </data>
-  <data name="deleteToolStripMenuItem.Text" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="propertiesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 24</value>
-  </data>
-  <data name="propertiesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Properties</value>
-  </data>
-  <data name="contextMenuStripBackupDevices.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 80</value>
-  </data>
-  <data name="&gt;&gt;contextMenuStripBackupDevices.Name" xml:space="preserve">
-    <value>contextMenuStripBackupDevices</value>
-  </data>
-  <data name="&gt;&gt;contextMenuStripBackupDevices.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>121</value>
-  </metadata>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>945, 560</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Database Backup &amp; Restore Manager for Microsoft SQL Server</value>
+  <data name="treeViewExplorer.SelectedImageIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;connectToolStripMenuItem.Name" xml:space="preserve">
     <value>connectToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;connectToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;contextMenuStripBackupDevices.Name" xml:space="preserve">
+    <value>contextMenuStripBackupDevices</value>
   </data>
-  <data name="&gt;&gt;disconnectToolStripMenuItem.Name" xml:space="preserve">
-    <value>disconnectToolStripMenuItem</value>
+  <data name="&gt;&gt;treeViewExplorer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;disconnectToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="restoreToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 28</value>
   </data>
-  <data name="&gt;&gt;refreshToolStripMenuItem.Name" xml:space="preserve">
-    <value>refreshToolStripMenuItem</value>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
   </data>
-  <data name="&gt;&gt;refreshToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;backupToolStripMenuItem.Name" xml:space="preserve">
-    <value>backupToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;backupToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;restoreToolStripMenuItem.Name" xml:space="preserve">
-    <value>restoreToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;restoreToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;newBackupDeviceToolStripMenuItem.Name" xml:space="preserve">
-    <value>newBackupDeviceToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;newBackupDeviceToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;languageToolStripMenuItem.Name" xml:space="preserve">
-    <value>languageToolStripMenuItem</value>
+  <data name="disconnectToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 28</value>
   </data>
   <data name="&gt;&gt;languageToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;englishToolStripMenuItem.Name" xml:space="preserve">
-    <value>englishToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;englishToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tiengVietToolStripMenuItem.Name" xml:space="preserve">
-    <value>tiengVietToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;tiengVietToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;imageListExplorer.Name" xml:space="preserve">
-    <value>imageListExplorer</value>
-  </data>
-  <data name="&gt;&gt;imageListExplorer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;position.Name" xml:space="preserve">
-    <value>position</value>
-  </data>
-  <data name="&gt;&gt;position.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;backupstartdateDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>backupstartdateDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;backupstartdateDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;backupfinishdateDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>backupfinishdateDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;backupfinishdateDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;usernameDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>usernameDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;usernameDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Column1.Name" xml:space="preserve">
-    <value>Column1</value>
-  </data>
-  <data name="&gt;&gt;Column1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;descriptionDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>descriptionDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;descriptionDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;backupHistoryBindingSource.Name" xml:space="preserve">
-    <value>backupHistoryBindingSource</value>
-  </data>
-  <data name="&gt;&gt;backupHistoryBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;appData.Name" xml:space="preserve">
-    <value>appData</value>
-  </data>
-  <data name="&gt;&gt;appData.Type" xml:space="preserve">
-    <value>DatabaseBackupManager.AppData, AppData.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;userDatabasesTableAdapter.Name" xml:space="preserve">
-    <value>userDatabasesTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;userDatabasesTableAdapter.Type" xml:space="preserve">
-    <value>DatabaseBackupManager.AppDataTableAdapters.userDatabasesTableAdapter, AppData.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;backup_devicesTableAdapter.Name" xml:space="preserve">
-    <value>backup_devicesTableAdapter</value>
-  </data>
   <data name="&gt;&gt;backup_devicesTableAdapter.Type" xml:space="preserve">
     <value>DatabaseBackupManager.AppDataTableAdapters.backup_devicesTableAdapter, AppData.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;backupHistoryTableAdapter.Name" xml:space="preserve">
-    <value>backupHistoryTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;backupHistoryTableAdapter.Type" xml:space="preserve">
-    <value>DatabaseBackupManager.AppDataTableAdapters.BackupHistoryTableAdapter, AppData.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;backupDevicesBindingSource.Name" xml:space="preserve">
     <value>backupDevicesBindingSource</value>
   </data>
-  <data name="&gt;&gt;backupDevicesBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;statusStrip1.Name" xml:space="preserve">
+    <value>statusStrip1</value>
   </data>
-  <data name="&gt;&gt;deleteToolStripMenuItem.Name" xml:space="preserve">
-    <value>deleteToolStripMenuItem</value>
+  <data name="backupDevicesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>289, 17</value>
   </data>
-  <data name="&gt;&gt;deleteToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Column1.UserAddedColumn" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;propertiesToolStripMenuItem.Name" xml:space="preserve">
-    <value>propertiesToolStripMenuItem</value>
+  <data name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 17</value>
   </data>
-  <data name="&gt;&gt;propertiesToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>152, 17</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MainForm</value>
+  <data name="backupHistoryBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>385, 60</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="userDatabasesTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>551, 17</value>
+  </data>
+  <data name="$this.TrayHeight" type="System.Int32, mscorlib">
+    <value>121</value>
+  </data>
+  <data name="contextMenuStripBackupDevices.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>832, 60</value>
+  </data>
+  <data name="appData.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>271, 60</value>
+  </data>
+  <data name="backupHistoryTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>621, 60</value>
+  </data>
+  <data name="backup_devicesTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 60</value>
+  </data>
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="imageListExplorer.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>798, 17</value>
   </data>
 </root>

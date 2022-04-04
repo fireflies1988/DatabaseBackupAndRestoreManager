@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Resources;
+using System.Threading;
 
 namespace DatabaseBackupManager
 {
@@ -55,6 +57,13 @@ namespace DatabaseBackupManager
                 });
                 writer.Generate();
             }
+        }
+
+        public static void ChangeLanguage(string lang)
+        {
+            //ResourceManager rm = new ResourceManager("DatabaseBackupManager.Properties.Resources", Assembly.GetExecutingAssembly());
+            Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo(lang);
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo(lang);
         }
     }
 }

@@ -286,8 +286,8 @@
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADu
-        CQAAAk1TRnQBSQFMAgEBBAEAAVABAAFQAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADw
+        CQAAAk1TRnQBSQFMAgEBBAEAAWgBAAFsAQABEAEAARABAAT/AQkBEAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAASADAAEBAQABCAYAAQgYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -329,7 +329,7 @@
         ASADAAEBAQABAQYAAQEWAAP/gQAB8AEBAv8B8AEPAv8BwAMAAcABAwL/AcADAAHAAQMC/wHAAwABwAED
         Av8BwAMAAcABAwHAAQMBwAMAAcABAwGAAQEBwAEBAgABwAEDAgABwAEDAgABwAEDAgABwAEDAgABwAED
         AgABwAEDAgABwAEDAgABwAEDAgABwAEDAgABwAEDAgABwAEDAv8BwAEDAgABwAEDAv8BwAEDAgABwAED
-        Av8BwAIDAf8BwAEDAv8B8AEPAv8B8AEPAv8L
+        Av8BwAIDAf8BwAEDAv8B8AEPAv8B8AEPAv8WAAs=
 </value>
   </data>
   <data name="treeViewExplorer.Nodes" mimetype="application/x-microsoft.net.object.binary.base64">
@@ -348,8 +348,8 @@
         MTYucG5n/////wkMAAAAAAAAAAUIAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCQAAAARU
         ZXh0C1Rvb2xUaXBUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJ
         bWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEBAQAAAQABAAEICAgCAAAABg0AAAAV
-        VGhp4bq/dCBi4buLIHNhbyBsxrB1CQQAAAAGDwAAAAVOb2RlMwD/////CQwAAAD/////CQwAAAAAAAAA
-        Cw==
+        VGhp4bq/dCBi4buLIHNhbyBsxrB1CQQAAAAGDwAAABFOb2RlQmFja3VwRGV2aWNlcwD/////CQwAAAD/
+        ////CQwAAAAAAAAACw==
 </value>
   </data>
   <data name="backupstartdateDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
@@ -370,9 +370,8 @@
   <data name="groupBoxBackupHistory.Text" xml:space="preserve">
     <value>Lịch sử sao lưu</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Inherit</value>
+  <data name="deleteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Xóa</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Trình quản lý sao lưu &amp; khôi phục cơ sở dữ liệu cho Microsoft SQL Server</value>
